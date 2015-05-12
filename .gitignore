@@ -15,9 +15,15 @@ misc
 modules
 profiles
 scripts
-themes
+themes/bartik
+themes/engines
+themes/garland
+themes/seven
+themes/stark
 web.config
+fitness-news.dd
+sites/all/themes/mobile
 
 !sites/all/modules/custom
 !sites/all/modules/features
-!sites/all/themes
+!sites/all/themes/custom
