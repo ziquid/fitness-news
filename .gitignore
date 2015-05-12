@@ -17,3 +17,7 @@ profiles
 scripts
 themes
 web.config
+
+!sites/all/modules/custom
+!sites/all/modules/features
+!sites/all/themes
