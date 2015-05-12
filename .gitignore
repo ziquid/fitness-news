@@ -8,7 +8,12 @@ sites/*/private
 sites/all/libraries
 
 .htaccess
-*.php
+authorize.php
+cron.php
+index.php
+install.php
+update.php
+xmlrpc.php
 *.txt
 includes
 misc
@@ -23,6 +28,10 @@ themes/stark
 web.config
 fitness-news.dd
 sites/all/themes/mobile
+
+default.settings.php
+example.sites.php
+sites.php
 
 !sites/all/modules/custom
 !sites/all/modules/features

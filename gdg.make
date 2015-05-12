@@ -66,6 +66,9 @@ projects[logintoboggan][version] = "1.4"
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
 
+projects[master][subdir] = "contrib"
+projects[master][version] = "2.0-beta4"
+
 projects[media][subdir] = "contrib"
 projects[media][version] = "2.x-dev"
 
