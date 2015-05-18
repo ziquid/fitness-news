@@ -4,6 +4,7 @@ api = 2
 
 ; Core
 projects[drupal][version] = "7.37"
+projects[drupal][type] = "core"
 
 ; Modules
 projects[admin_menu][subdir] = "contrib"
@@ -27,9 +28,6 @@ projects[devel][version] = "1.5"
 projects[draggableviews][subdir] = "contrib"
 projects[draggableviews][version] = "2.1"
 
-projects[fontyourface][subdir] = "contrib"
-projects[fontyourface][version] = "2.8"
-
 projects[entity][subdir] = "contrib"
 projects[entity][version] = "1.6"
 
@@ -39,17 +37,23 @@ projects[entityreference][version] = "1.1"
 projects[features][subdir] = "contrib"
 projects[features][version] = "2.5"
 
+projects[feeds][subdir] = "contrib"
+projects[feeds][version] = "2.0-alpha8"
+
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-beta1"
+
+projects[fontyourface][subdir] = "contrib"
+projects[fontyourface][version] = "2.8"
 
 projects[geshifilter][subdir] = "contrib"
 projects[geshifilter][version] = "1.2"
 
-projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.5"
-
 projects[jcarousel][subdir] = "contrib"
 projects[jcarousel][version] = "2.7"
+
+projects[job_scheduler][subdir] = "contrib"
+projects[job_scheduler][version] = "2.0-alpha3"
 
 projects[libraries][subdir] = "contrib"
 projects[libraries][version] = "2.2"
@@ -72,8 +76,8 @@ projects[master][version] = "2.0-beta4"
 projects[media][subdir] = "contrib"
 projects[media][version] = "2.x-dev"
 
-projects[mobile_theme][subdir] = "contrib"
-projects[mobile_theme][version] = "1.2"
+projects[metatag][subdir] = "contrib"
+projects[metatag][version] = "1.4"
 
 projects[noindex_external_links][subdir] = "contrib"
 projects[noindex_external_links][version] = "2.0-rc1"
@@ -83,9 +87,6 @@ projects[oauth][version] = "3.2"
 
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "1.2"
-
-projects[rotating_banner][subdir] = "contrib"
-projects[rotating_banner][version] = "2.x-dev"
 
 projects[stage_file_proxy][subdir] = "contrib"
 projects[stage_file_proxy][version] = "1.7"
@@ -115,8 +116,6 @@ projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.2"
 
 ; Themes
-projects[mobile][version] = "2.0"
-
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
 projects[gdg][download][type] = ""
