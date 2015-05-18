@@ -21,7 +21,7 @@ function article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Imported Data',
-    'weight' => '6',
+    'weight' => '3',
     'children' => array(
       0 => 'field_imported_author',
       1 => 'field_imported_categories',

@@ -213,7 +213,7 @@ function article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 20,
     ),
   );
 
@@ -278,7 +278,7 @@ function article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 21,
     ),
   );
 
@@ -347,7 +347,7 @@ function article_field_default_field_instances() {
         'rows' => 15,
       ),
       'type' => 'text_textarea',
-      'weight' => 9,
+      'weight' => 19,
     ),
   );
 
@@ -412,7 +412,7 @@ function article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 24,
     ),
   );
 
@@ -477,7 +477,7 @@ function article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 25,
     ),
   );
 
@@ -542,7 +542,7 @@ function article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 22,
     ),
   );
 
@@ -611,7 +611,7 @@ function article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 17,
     ),
   );
 
@@ -741,7 +741,7 @@ function article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 18,
     ),
   );
 
@@ -806,7 +806,7 @@ function article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 23,
     ),
   );
 
