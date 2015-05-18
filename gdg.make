@@ -10,8 +10,14 @@ projects[drupal][type] = "core"
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "3.0-rc5"
 
+projects[admin_role][subdir] = "contrib"
+projects[admin_role][version] = "1.0"
+
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][version] = "1.0"
+
+projects[better_formats][subdir] = "contrib"
+projects[better_formats][version] = "1.0-beta1"
 
 projects[block_class][subdir] = "contrib"
 projects[block_class][version] = "2.1"
@@ -48,6 +54,9 @@ projects[fontyourface][version] = "2.8"
 
 projects[geshifilter][subdir] = "contrib"
 projects[geshifilter][version] = "1.2"
+
+projects[imagecache_token][subdir] = "contrib"
+projects[imagecache_token][version] = "1.x-dev"
 
 projects[jcarousel][subdir] = "contrib"
 projects[jcarousel][version] = "2.7"

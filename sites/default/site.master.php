@@ -5,7 +5,9 @@ $conf['master_version'] = 2;
 $conf['master_modules'] = array(
   'base' => array(
     'admin_menu_toolbar',
+    'adminrole',
     'auto_nodetitle',
+    'better_formats',
     'block_class',
     'codefilter',
     'contact',
