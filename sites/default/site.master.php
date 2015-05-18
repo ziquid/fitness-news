@@ -12,6 +12,7 @@ $conf['master_modules'] = array(
     'codefilter',
     'contact',
     'contextual',
+    'date',
     'draggableviews',
     'entity_token',
     'entityreference',

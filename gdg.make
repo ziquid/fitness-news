@@ -28,6 +28,9 @@ projects[ctools][version] = "1.7"
 projects[codefilter][subdir] = "contrib"
 projects[codefilter][version] = "1.1"
 
+projects[date][subdir] = "contrib"
+projects[date][version] = "2.8"
+
 projects[devel][subdir] = "contrib"
 projects[devel][version] = "1.5"
 
