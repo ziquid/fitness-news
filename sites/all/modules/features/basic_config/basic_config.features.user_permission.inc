@@ -309,6 +309,15 @@ function basic_config_user_default_permissions() {
     'module' => 'feeds',
   );
 
+  // Exported permission: 'administer fieldgroups'.
+  $permissions['administer fieldgroups'] = array(
+    'name' => 'administer fieldgroups',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'field_group',
+  );
+
   // Exported permission: 'administer file types'.
   $permissions['administer file types'] = array(
     'name' => 'administer file types',
@@ -1347,6 +1356,19 @@ function basic_config_user_default_permissions() {
       'Developer' => 'Developer',
     ),
     'module' => 'page_manager',
+  );
+
+  // Exported permission: 'use text format deck_html'.
+  $permissions['use text format deck_html'] = array(
+    'name' => 'use text format deck_html',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Contributor' => 'Contributor',
+      'Developer' => 'Developer',
+      'Editor' => 'Editor',
+      'Title Administrator' => 'Title Administrator',
+    ),
+    'module' => 'filter',
   );
 
   // Exported permission: 'use text format full_html'.

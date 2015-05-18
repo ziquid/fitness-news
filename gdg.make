@@ -46,6 +46,9 @@ projects[features][version] = "2.5"
 projects[feeds][subdir] = "contrib"
 projects[feeds][version] = "2.0-alpha8"
 
+projects[field_group][subdir] = "contrib"
+projects[field_group][version] = "1.4"
+
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-beta1"
 

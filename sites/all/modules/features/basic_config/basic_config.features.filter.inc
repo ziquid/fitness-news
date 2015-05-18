@@ -10,6 +10,94 @@
 function basic_config_filter_default_formats() {
   $formats = array();
 
+  // Exported format: Deck HTML.
+  $formats['deck_html'] = array(
+    'format' => 'deck_html',
+    'name' => 'Deck HTML',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => 0,
+    'filters' => array(
+      'filter_html' => array(
+        'weight' => -10,
+        'status' => 1,
+        'settings' => array(
+          'allowed_html' => '<em> <strong>',
+          'filter_html_help' => 1,
+          'filter_html_nofollow' => 0,
+        ),
+      ),
+      'typogrify' => array(
+        'weight' => 0,
+        'status' => 1,
+        'settings' => array(
+          'smartypants_enabled' => 1,
+          'smartypants_hyphens' => 1,
+          'space_hyphens' => 0,
+          'wrap_ampersand' => 1,
+          'widont_enabled' => 1,
+          'space_to_nbsp' => 1,
+          'hyphenate_shy' => 0,
+          'wrap_abbr' => 0,
+          'wrap_caps' => 1,
+          'wrap_initial_quotes' => 1,
+          'wrap_numbers' => 0,
+          'ligatures' => array(
+            'ffi' => 'ffi',
+            'ffl' => 'ffl',
+            'ff' => 'ff',
+            'fi' => 'fi',
+            'fl' => 'fl',
+            'ij' => 'ij',
+            'IJ' => 'IJ',
+            'st' => 0,
+            'ss' => 0,
+          ),
+          'arrows' => array(
+            '-&gt;&gt;' => '-&gt;&gt;',
+            '&lt;&lt;-' => '&lt;&lt;-',
+            '-&gt;|' => '-&gt;|',
+            '|&lt;-' => '|&lt;-',
+            '&lt;-&gt;' => '&lt;-&gt;',
+            '-&gt;' => '-&gt;',
+            '&lt;-' => '&lt;-',
+            '&lt;=&gt;' => '&lt;=&gt;',
+            '=&gt;' => '=&gt;',
+            '&lt;=' => '&lt;=',
+          ),
+          'fractions' => array(
+            '1/4' => '1/4',
+            '1/2' => '1/2',
+            '3/4' => '3/4',
+            '1/3' => '1/3',
+            '2/3' => '2/3',
+            '1/5' => '1/5',
+            '2/5' => '2/5',
+            '3/5' => '3/5',
+            '4/5' => '4/5',
+            '1/6' => '1/6',
+            '5/6' => '5/6',
+            '1/8' => '1/8',
+            '3/8' => '3/8',
+            '5/8' => '5/8',
+            '7/8' => '7/8',
+          ),
+          'quotes' => array(
+            ',,' => ',,',
+            '\'\'' => '\'\'',
+            '&lt;&lt;' => '&lt;&lt;',
+            '&gt;&gt;' => '&gt;&gt;',
+          ),
+        ),
+      ),
+      'filter_htmlcorrector' => array(
+        'weight' => 10,
+        'status' => 1,
+        'settings' => array(),
+      ),
+    ),
+  );
+
   // Exported format: Full HTML.
   $formats['full_html'] = array(
     'format' => 'full_html',

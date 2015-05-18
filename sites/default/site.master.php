@@ -18,6 +18,7 @@ $conf['master_modules'] = array(
     'features',
     'feeds',
     'feeds_news',
+    'field_group',
     'fontyourface_ui',
     'fontyourface_wysiwyg',
     'geshifield',
