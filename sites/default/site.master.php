@@ -7,7 +7,6 @@ $conf['master_modules'] = array(
     'admin_menu_toolbar',
     'auto_nodetitle',
     'block_class',
-    'blog',
     'codefilter',
     'contact',
     'contextual',

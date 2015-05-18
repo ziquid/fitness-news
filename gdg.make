@@ -61,7 +61,7 @@ projects[link][subdir] = "contrib"
 projects[link][version] = "1.3"
 
 projects[logintoboggan][subdir] = "contrib"
-projects[logintoboggan][version] = "1.4"
+projects[logintoboggan][version] = "1.5"
 
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
