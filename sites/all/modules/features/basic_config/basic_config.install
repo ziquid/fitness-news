@@ -1,0 +1,9 @@
+<?php
+
+/** this is a @file */
+
+function basic_config_update_7000() {
+
+  theme_enable('gdg');
+
+}
