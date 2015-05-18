@@ -31,8 +31,8 @@ function article_field_group_info() {
       5 => 'field_imported_geo_locations',
       6 => 'field_imported_guid',
       7 => 'field_imported_url',
-      8 => 'field_imported_published_date',
-      9 => 'field_imported_title',
+      8 => 'field_imported_title',
+      9 => 'field_imported_published_date',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
