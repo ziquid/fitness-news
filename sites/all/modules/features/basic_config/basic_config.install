@@ -2,8 +2,8 @@
 
 /** this is a @file */
 
-function basic_config_update_7000() {
+function basic_config_update_7001() {
 
-  theme_enable('gdg');
+  theme_enable(array('gdg'));
 
 }
