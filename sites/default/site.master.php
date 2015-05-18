@@ -53,6 +53,7 @@ $conf['master_modules'] = array(
     'update',
     'video_embed_field',
 
+    'article',
     'basic_config',
   ),
 
