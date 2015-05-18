@@ -4,7 +4,6 @@ $conf['install_profile'] = 'minimal';
 $conf['master_version'] = 2;
 $conf['master_modules'] = array(
   'base' => array(
-    'minimal',
     'admin_menu_toolbar',
     'auto_nodetitle',
     'block_class',
@@ -49,6 +48,8 @@ $conf['master_modules'] = array(
     'typogrify',
     'update',
     'video_embed_field',
+
+    'basic_config',
   ),
 
   'local' => array(
