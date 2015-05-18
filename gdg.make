@@ -55,6 +55,9 @@ projects[fontyourface][version] = "2.8"
 projects[geshifilter][subdir] = "contrib"
 projects[geshifilter][version] = "1.2"
 
+projects[globalredirect][subdir] = "contrib"
+projects[globalredirect][version] = "1.5"
+
 projects[imagecache_token][subdir] = "contrib"
 projects[imagecache_token][version] = "1.x-dev"
 
@@ -96,6 +99,9 @@ projects[oauth][version] = "3.2"
 
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "1.2"
+
+projects[redirect][subdir] = "contrib"
+projects[redirect][version] = "1.0-rc1"
 
 projects[stage_file_proxy][subdir] = "contrib"
 projects[stage_file_proxy][version] = "1.7"

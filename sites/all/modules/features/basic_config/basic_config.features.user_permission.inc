@@ -15,6 +15,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access administration menu',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'admin_menu',
   );
@@ -24,6 +25,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access administration pages',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'system',
   );
@@ -33,6 +35,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access all views',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'views',
   );
@@ -62,6 +65,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access content overview',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'node',
   );
@@ -98,6 +102,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access media browser',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'media',
   );
@@ -107,6 +112,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access own authorizations',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'oauth_common',
   );
@@ -116,6 +122,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access own consumers',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'oauth_common',
   );
@@ -125,6 +132,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access site in maintenance mode',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'system',
   );
@@ -134,6 +142,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access site reports',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'system',
   );
@@ -153,6 +162,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access statistics',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'statistics',
   );
@@ -171,6 +181,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access user profiles',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'user',
   );
@@ -180,6 +191,7 @@ function basic_config_user_default_permissions() {
     'name' => 'add authenticated twitter accounts',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'twitter',
   );
@@ -189,6 +201,7 @@ function basic_config_user_default_permissions() {
     'name' => 'add media from remote sources',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'media_internet',
   );
@@ -198,6 +211,7 @@ function basic_config_user_default_permissions() {
     'name' => 'add twitter accounts',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'twitter',
   );
@@ -216,6 +230,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer actions',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'system',
   );
@@ -252,6 +267,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer consumers',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'oauth_common',
   );
@@ -270,6 +286,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer content types',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'node',
   );
@@ -342,6 +359,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer media browser',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'media',
   );
@@ -351,6 +369,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer media wysiwyg view mode',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'media_wysiwyg_view_mode',
   );
@@ -360,6 +379,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'menu',
   );
@@ -369,6 +389,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer meta tags',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'metatag',
   );
@@ -378,6 +399,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer modules',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'system',
   );
@@ -387,6 +409,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer nodes',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'node',
   );
@@ -396,6 +419,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer noindex external links',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'noindex_external_links',
   );
@@ -405,6 +429,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer oauth',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'oauth_common',
   );
@@ -414,6 +439,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer page manager',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'page_manager',
   );
@@ -423,6 +449,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer pathauto',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'pathauto',
   );
@@ -432,8 +459,18 @@ function basic_config_user_default_permissions() {
     'name' => 'administer permissions',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'user',
+  );
+
+  // Exported permission: 'administer redirects'.
+  $permissions['administer redirects'] = array(
+    'name' => 'administer redirects',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'redirect',
   );
 
   // Exported permission: 'administer site configuration'.
@@ -441,6 +478,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer site configuration',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'system',
   );
@@ -450,6 +488,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer software updates',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'system',
   );
@@ -459,6 +498,8 @@ function basic_config_user_default_permissions() {
     'name' => 'administer stage_file_proxy settings',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
+      'Title Administrator' => 'Title Administrator',
     ),
     'module' => 'stage_file_proxy',
   );
@@ -468,6 +509,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer statistics',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'statistics',
   );
@@ -477,6 +519,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer taxonomy',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'taxonomy',
   );
@@ -486,6 +529,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer themes',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'system',
   );
@@ -495,6 +539,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer twitter accounts',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'twitter',
   );
@@ -504,6 +549,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer url aliases',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'path',
   );
@@ -513,6 +559,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer users',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'user',
   );
@@ -522,6 +569,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer video styles',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'video_embed_field',
   );
@@ -531,6 +579,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer views',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'views',
   );
@@ -540,6 +589,7 @@ function basic_config_user_default_permissions() {
     'name' => 'block IP addresses',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'system',
   );
@@ -558,6 +608,7 @@ function basic_config_user_default_permissions() {
     'name' => 'bypass node access',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'node',
   );
@@ -605,6 +656,7 @@ function basic_config_user_default_permissions() {
     'name' => 'create article content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Contributor' => 'Contributor',
     ),
     'module' => 'node',
   );
@@ -641,6 +693,8 @@ function basic_config_user_default_permissions() {
     'name' => 'create url aliases',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Contributor' => 'Contributor',
+      'Developer' => 'Developer',
     ),
     'module' => 'path',
   );
@@ -713,6 +767,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete own article content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Contributor' => 'Contributor',
     ),
     'module' => 'node',
   );
@@ -938,6 +993,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit meta tags',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'metatag',
   );
@@ -947,6 +1003,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit own article content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Contributor' => 'Contributor',
     ),
     'module' => 'node',
   );
@@ -1074,6 +1131,7 @@ function basic_config_user_default_permissions() {
     'name' => 'notify of path changes',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'pathauto',
   );
@@ -1083,6 +1141,7 @@ function basic_config_user_default_permissions() {
     'name' => 'oauth authorize any consumers',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'oauth_common',
   );
@@ -1092,6 +1151,7 @@ function basic_config_user_default_permissions() {
     'name' => 'oauth register any consumers',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'oauth_common',
   );
@@ -1246,6 +1306,7 @@ function basic_config_user_default_permissions() {
     'name' => 'use PHP for settings',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'php',
   );
@@ -1273,6 +1334,7 @@ function basic_config_user_default_permissions() {
     'name' => 'use media wysiwyg',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'media_wysiwyg',
   );
@@ -1282,6 +1344,7 @@ function basic_config_user_default_permissions() {
     'name' => 'use page manager',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'page_manager',
   );
@@ -1354,6 +1417,7 @@ function basic_config_user_default_permissions() {
     'name' => 'view own unpublished content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Contributor' => 'Contributor',
     ),
     'module' => 'node',
   );
@@ -1363,6 +1427,7 @@ function basic_config_user_default_permissions() {
     'name' => 'view post access counter',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'statistics',
   );
@@ -1390,6 +1455,7 @@ function basic_config_user_default_permissions() {
     'name' => 'view the administration theme',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'system',
   );
