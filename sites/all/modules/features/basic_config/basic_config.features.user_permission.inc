@@ -1286,11 +1286,36 @@ function basic_config_user_default_permissions() {
     'module' => 'page_manager',
   );
 
+  // Exported permission: 'use text format full_html'.
+  $permissions['use text format full_html'] = array(
+    'name' => 'use text format full_html',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
+      'Title Administrator' => 'Title Administrator',
+    ),
+    'module' => 'filter',
+  );
+
+  // Exported permission: 'use text format limited_html'.
+  $permissions['use text format limited_html'] = array(
+    'name' => 'use text format limited_html',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Contributor' => 'Contributor',
+      'Developer' => 'Developer',
+      'Editor' => 'Editor',
+      'Title Administrator' => 'Title Administrator',
+    ),
+    'module' => 'filter',
+  );
+
   // Exported permission: 'use text format php_code'.
   $permissions['use text format php_code'] = array(
     'name' => 'use text format php_code',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Developer' => 'Developer',
     ),
     'module' => 'filter',
   );
