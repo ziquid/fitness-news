@@ -18,7 +18,8 @@ $conf['master_modules'] = array(
     'entityreference',
     'features',
     'feeds',
-    'feeds_news',
+    'feeds_article',
+    'feeds_tamper',
     'field_group',
     'fontyourface_ui',
     'fontyourface_wysiwyg',
@@ -54,13 +55,13 @@ $conf['master_modules'] = array(
     'update',
     'video_embed_field',
 
-    'article',
     'basic_config',
   ),
 
   'local' => array(
     'dblog',
     'devel',
+    'feeds_tamper_ui',
     'feeds_ui',
     'field_ui',
     'stage_file_proxy',
@@ -70,6 +71,7 @@ $conf['master_modules'] = array(
   'dev' => array(
     'dblog',
     'devel',
+    'feeds_tamper_ui',
     'feeds_ui',
     'field_ui',
     'stage_file_proxy',

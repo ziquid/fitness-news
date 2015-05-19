@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * article.field_group.inc
+ * feeds_article.field_group.inc
  */
 
 /**
  * Implements hook_field_group_info().
  */
-function article_field_group_info() {
+function feeds_article_field_group_info() {
   $export = array();
 
   $field_group = new stdClass();

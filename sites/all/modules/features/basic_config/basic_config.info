@@ -1,7 +1,7 @@
 name = Basic Configuration
 description = Basic Configuration settings
 core = 7.x
-package = Features
+package = GDG Features
 version = 7.x-0.08
 project = basic_config
 dependencies[] = admin_menu

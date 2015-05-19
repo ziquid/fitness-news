@@ -49,6 +49,9 @@ projects[features][version] = "2.5"
 projects[feeds][subdir] = "contrib"
 projects[feeds][version] = "2.0-alpha8"
 
+projects[feeds_tamper][subdir] = "contrib"
+projects[feeds_tamper][version] = "1.0"
+
 projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.4"
 

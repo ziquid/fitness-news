@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * article.features.field_base.inc
+ * feeds_article.features.field_base.inc
  */
 
 /**
  * Implements hook_field_default_field_bases().
  */
-function article_field_default_field_bases() {
+function feeds_article_field_default_field_bases() {
   $field_bases = array();
 
   // Exported field_base: 'body'
