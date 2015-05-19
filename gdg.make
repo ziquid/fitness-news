@@ -10,8 +10,8 @@ projects[drupal][type] = "core"
 projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "3.0-rc5"
 
-projects[admin_role][subdir] = "contrib"
-projects[admin_role][version] = "1.0"
+projects[adminrole][subdir] = "contrib"
+projects[adminrole][version] = "1.0"
 
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][version] = "1.0"
