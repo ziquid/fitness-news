@@ -1,8 +1,32 @@
 <?php
 
-/**
- * @file
- * Empty module file.
- */
+/** This is a @file */
 
 include_once('feeds_article.features.inc');
+
+function feeds_article_node_presave($node) {
+
+//   if ($node->log == 'Created by FeedsNodeProcessor') {
+  if ($node->type == 'article') {
+
+// check relevance
+    $node->field_relevance_log = array(
+      LANGUAGE_NONE => array(
+        0 => array(
+
+          'value' => filter_xss(
+            decode_entities(
+              $node->field_imported_description[LANGUAGE_NONE][0]['value']
+            ),
+            array()
+          ),
+
+        ),
+      ),
+    );
+
+  }
+
+//     dpm($node, $node->title);
+
+}

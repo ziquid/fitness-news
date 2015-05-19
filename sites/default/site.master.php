@@ -38,6 +38,7 @@ $conf['master_modules'] = array(
     'menu',
     'metatag',
     'noindex_external_links',
+    'number',
     'page_manager',
     'pathauto',
     'php',
