@@ -154,6 +154,11 @@ function feeds_article_node_presave($node) {
 
   } // feed item to process?
 
+// publish or promote?
+
+  ($relevance > 10) && $node->status = 1;
+  ($relevance > 20) && $node->promote = 1;
+
 //     dpm($node, $node->title);
 
 }
