@@ -15,28 +15,113 @@ function feeds_article_node_presave($node) {
 
       'beauty' => array(
         'beauty' => 3,
+        'chic' => 3,
+        'cosmetic' => 3,
+        'cosmetics' => 3,
+        'cute' => 3,
+        'cuteness' => 3,
+        'lips' => 3,
         'makeup' => 3,
         'sex' => 2,
+        'skin' => 2,
+
+        'badass' => -100,
+        'damn' => -100,
+        'f---' => -100,
+
       ),
 
       'health' => array(
-        'health' => 3,
-        'nutrition' => 3,
+        'cough' => 3,
         'diet' => 3,
+        'disease' => 3,
+        'health' => 3,
+        'healthiest' => 3,
+        'healthy' => 3,
+        'hospital' => 3,
+        'hospitals' => 3,
+        'nutrition' => 3,
+        'pregnant' => 3,
+        'pregnancy' => 3,
         'sex' => 2,
+        'skin' => 2,
+        'sick' => 3,
+        'sickness' => 3,
+        'weight' => 3,
+
+        'badass' => -100,
+        'damn' => -100,
+        'f---' => -100,
+
       ),
 
       'fitness' => array(
+        'active' => 2,
+        'athlete' => 2,
+        'class' => 1,
+        'classes' => 1,
         'fitness' => 3,
         'gym' => 3,
-        'shape' => 3,
+        'kickbox' => 3,
+        'kickboxer' => 3,
+        'kickboxing' => 3,
+        'run' => 2,
+        'running' => 3,
+        'shape' => 1,
+        'self-defense' => 3,
         'sex' => 2,
+        'testosterone' => 3,
+        'weight' => 2,
+        'workout' => 3,
+        'work out' => 3,
+        'yoga' => 3,
+        'zumba' => 3,
+
+        'badass' => -100,
+        'damn' => -100,
+        'f---' => -100,
+
       ),
 
       'sex' => array(
         'sex' => 3,
+        'bondage' => 2,
+        'boyfriend' => 3,
+        'climax' => 2,
         'date' => 3,
+        'dildo' => 3,
+        'dildos' => 3,
+        'engaged' => 3,
+        'girlfriend' => 3,
+        'love' => 3,
+        'loved' => 3,
+        'loves' => 3,
+        'marry' => 3,
+        'marriage' => 3,
+        'married' => 3,
+        'masturbating' => 3,
+        'masturbation' => 3,
+        'naked' => 3,
+        'nude' => 3,
+        'orgasm' => 3,
+        'orgasming' => 3,
+        'orgasms' => 3,
+        'porn' => 3,
+        'porno' => 3,
+        'pornography' => 3,
+        'relationship' => 3,
+        'relationships' => 3,
+        'sexual' => 3,
         'sexy' => 2,
+        'vibrator' => 3,
+        'vibrators' => 3,
+        'virgin' => 3,
+        'virginity' => 3,
+
+        'badass' => -100,
+        'damn' => -100,
+        'f---' => -100,
+
       ),
 
     );
@@ -152,12 +237,14 @@ function feeds_article_node_presave($node) {
       ),
     );
 
-  } // feed item to process?
-
 // publish or promote?
 
-  ($relevance > 10) && $node->status = 1;
-  ($relevance > 20) && $node->promote = 1;
+    ($relevance > 10) && $node->status = 1;
+    ($relevance > 20) && $node->promote = 1;
+
+  } // feed item to process?
+
+
 
 //     dpm($node, $node->title);
 
