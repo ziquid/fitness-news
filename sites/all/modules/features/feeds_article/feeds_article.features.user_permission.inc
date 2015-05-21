@@ -15,6 +15,7 @@ function feeds_article_user_default_permissions() {
     'name' => 'administer feeds_tamper',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'feeds_tamper',
   );
@@ -24,6 +25,7 @@ function feeds_article_user_default_permissions() {
     'name' => 'tamper feed',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'feeds_tamper',
   );
@@ -33,6 +35,7 @@ function feeds_article_user_default_permissions() {
     'name' => 'tamper opml',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'feeds_tamper',
   );
