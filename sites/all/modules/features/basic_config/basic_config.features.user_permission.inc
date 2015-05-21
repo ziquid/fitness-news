@@ -16,6 +16,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'admin_menu',
   );
@@ -26,6 +27,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'system',
   );
@@ -36,6 +38,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'views',
   );
@@ -45,6 +48,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access comments',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'comment',
   );
@@ -54,6 +58,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
@@ -66,6 +71,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -75,6 +81,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access contextual links',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'contextual',
   );
@@ -84,6 +91,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access devel information',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'devel',
   );
@@ -93,6 +101,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access draggableviews',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'draggableviews',
   );
@@ -103,6 +112,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'media',
   );
@@ -113,6 +123,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'oauth_common',
   );
@@ -123,6 +134,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'oauth_common',
   );
@@ -133,6 +145,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'system',
   );
@@ -143,6 +156,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'system',
   );
@@ -152,6 +166,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access site-wide contact form',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'contact',
@@ -163,6 +178,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'statistics',
   );
@@ -172,6 +188,7 @@ function basic_config_user_default_permissions() {
     'name' => 'access user contact forms',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'contact',
   );
@@ -182,6 +199,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'user',
   );
@@ -192,6 +210,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'twitter',
   );
@@ -202,6 +221,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'media_internet',
   );
@@ -212,6 +232,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'twitter',
   );
@@ -221,6 +242,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer @font-your-face',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'fontyourface',
   );
@@ -231,6 +253,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'system',
   );
@@ -240,6 +263,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer block classes',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'block_class',
   );
@@ -249,6 +273,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer blocks',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'block',
   );
@@ -258,6 +283,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer comments',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'comment',
   );
@@ -268,6 +294,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'oauth_common',
   );
@@ -277,6 +304,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer contact forms',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'contact',
   );
@@ -287,6 +315,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -296,6 +325,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer features',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'features',
   );
@@ -305,6 +335,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer feeds',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'feeds',
   );
@@ -314,6 +345,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer fieldgroups',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'field_group',
   );
@@ -323,6 +355,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer file types',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -332,6 +365,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -341,6 +375,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer filters',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'filter',
   );
@@ -350,6 +385,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer image styles',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'image',
   );
@@ -359,6 +395,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer lightbox2',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'lightbox2',
   );
@@ -369,6 +406,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'media',
   );
@@ -379,6 +417,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'media_wysiwyg_view_mode',
   );
@@ -389,6 +428,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'menu',
   );
@@ -399,6 +439,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'metatag',
   );
@@ -409,6 +450,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'system',
   );
@@ -419,6 +461,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -429,6 +472,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'noindex_external_links',
   );
@@ -439,6 +483,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'oauth_common',
   );
@@ -449,6 +494,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'page_manager',
   );
@@ -459,6 +505,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'pathauto',
   );
@@ -469,6 +516,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'user',
   );
@@ -478,6 +526,7 @@ function basic_config_user_default_permissions() {
     'name' => 'administer redirects',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'redirect',
   );
@@ -488,6 +537,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'system',
   );
@@ -498,6 +548,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'system',
   );
@@ -508,6 +559,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
       'Title Administrator' => 'Title Administrator',
     ),
     'module' => 'stage_file_proxy',
@@ -519,6 +571,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'statistics',
   );
@@ -529,6 +582,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'taxonomy',
   );
@@ -539,6 +593,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'system',
   );
@@ -549,6 +604,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'twitter',
   );
@@ -559,6 +615,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'path',
   );
@@ -569,6 +626,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'user',
   );
@@ -579,6 +637,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'video_embed_field',
   );
@@ -589,6 +648,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'views',
   );
@@ -599,6 +659,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'system',
   );
@@ -608,6 +669,7 @@ function basic_config_user_default_permissions() {
     'name' => 'bypass file access',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -618,6 +680,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -627,6 +690,7 @@ function basic_config_user_default_permissions() {
     'name' => 'cancel account',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
@@ -637,6 +701,7 @@ function basic_config_user_default_permissions() {
     'name' => 'change own username',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'user',
@@ -647,6 +712,7 @@ function basic_config_user_default_permissions() {
     'name' => 'clear feed feeds',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'feeds',
   );
@@ -656,6 +722,7 @@ function basic_config_user_default_permissions() {
     'name' => 'clear opml feeds',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'feeds',
   );
@@ -666,6 +733,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Contributor' => 'Contributor',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -675,15 +743,7 @@ function basic_config_user_default_permissions() {
     'name' => 'create feed content',
     'roles' => array(
       'Administrator' => 'Administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'create feed_item content'.
-  $permissions['create feed_item content'] = array(
-    'name' => 'create feed_item content',
-    'roles' => array(
-      'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -693,6 +753,7 @@ function basic_config_user_default_permissions() {
     'name' => 'create files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -704,6 +765,7 @@ function basic_config_user_default_permissions() {
       'Administrator' => 'Administrator',
       'Contributor' => 'Contributor',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'path',
   );
@@ -713,6 +775,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete any article content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -722,6 +785,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete any audio files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -731,6 +795,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete any document files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -740,15 +805,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete any feed content',
     'roles' => array(
       'Administrator' => 'Administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete any feed_item content'.
-  $permissions['delete any feed_item content'] = array(
-    'name' => 'delete any feed_item content',
-    'roles' => array(
-      'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -758,6 +815,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete any image files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -767,6 +825,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete any video files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -777,6 +836,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Contributor' => 'Contributor',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -786,6 +846,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete own audio files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -795,6 +856,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete own document files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -804,15 +866,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete own feed content',
     'roles' => array(
       'Administrator' => 'Administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'delete own feed_item content'.
-  $permissions['delete own feed_item content'] = array(
-    'name' => 'delete own feed_item content',
-    'roles' => array(
-      'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -822,6 +876,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete own image files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -831,6 +886,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete own video files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -840,17 +896,9 @@ function basic_config_user_default_permissions() {
     'name' => 'delete revisions',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'delete terms in sections'.
-  $permissions['delete terms in sections'] = array(
-    'name' => 'delete terms in sections',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-    ),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: 'display drupal links'.
@@ -858,6 +906,7 @@ function basic_config_user_default_permissions() {
     'name' => 'display drupal links',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'admin_menu',
   );
@@ -867,6 +916,7 @@ function basic_config_user_default_permissions() {
     'name' => 'download any audio files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -876,6 +926,7 @@ function basic_config_user_default_permissions() {
     'name' => 'download any document files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -885,6 +936,7 @@ function basic_config_user_default_permissions() {
     'name' => 'download any image files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -894,6 +946,7 @@ function basic_config_user_default_permissions() {
     'name' => 'download any video files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -903,6 +956,7 @@ function basic_config_user_default_permissions() {
     'name' => 'download original image',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'lightbox2',
   );
@@ -912,6 +966,7 @@ function basic_config_user_default_permissions() {
     'name' => 'download own audio files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -921,6 +976,7 @@ function basic_config_user_default_permissions() {
     'name' => 'download own document files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -930,6 +986,7 @@ function basic_config_user_default_permissions() {
     'name' => 'download own image files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -939,6 +996,7 @@ function basic_config_user_default_permissions() {
     'name' => 'download own video files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -948,6 +1006,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit any article content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -957,6 +1016,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit any audio files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -966,6 +1026,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit any document files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -975,15 +1036,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit any feed content',
     'roles' => array(
       'Administrator' => 'Administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit any feed_item content'.
-  $permissions['edit any feed_item content'] = array(
-    'name' => 'edit any feed_item content',
-    'roles' => array(
-      'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -993,6 +1046,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit any image files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -1002,6 +1056,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit any video files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -1012,6 +1067,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'metatag',
   );
@@ -1022,6 +1078,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Contributor' => 'Contributor',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -1031,6 +1088,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit own audio files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -1040,6 +1098,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit own comments',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
@@ -1050,6 +1109,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit own document files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -1059,15 +1119,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit own feed content',
     'roles' => array(
       'Administrator' => 'Administrator',
-    ),
-    'module' => 'node',
-  );
-
-  // Exported permission: 'edit own feed_item content'.
-  $permissions['edit own feed_item content'] = array(
-    'name' => 'edit own feed_item content',
-    'roles' => array(
-      'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -1077,6 +1129,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit own image files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -1086,17 +1139,9 @@ function basic_config_user_default_permissions() {
     'name' => 'edit own video files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
-  );
-
-  // Exported permission: 'edit terms in sections'.
-  $permissions['edit terms in sections'] = array(
-    'name' => 'edit terms in sections',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-    ),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: 'execute php code'.
@@ -1104,6 +1149,7 @@ function basic_config_user_default_permissions() {
     'name' => 'execute php code',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'devel',
   );
@@ -1113,6 +1159,7 @@ function basic_config_user_default_permissions() {
     'name' => 'flush caches',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'admin_menu',
   );
@@ -1122,6 +1169,7 @@ function basic_config_user_default_permissions() {
     'name' => 'generate features',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'features',
   );
@@ -1131,6 +1179,7 @@ function basic_config_user_default_permissions() {
     'name' => 'import feed feeds',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'feeds',
   );
@@ -1140,6 +1189,7 @@ function basic_config_user_default_permissions() {
     'name' => 'import opml feeds',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'feeds',
   );
@@ -1149,6 +1199,7 @@ function basic_config_user_default_permissions() {
     'name' => 'manage features',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'features',
   );
@@ -1159,6 +1210,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'pathauto',
   );
@@ -1169,6 +1221,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'oauth_common',
   );
@@ -1179,6 +1232,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'oauth_common',
   );
@@ -1188,6 +1242,7 @@ function basic_config_user_default_permissions() {
     'name' => 'post comments',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'comment',
@@ -1198,6 +1253,7 @@ function basic_config_user_default_permissions() {
     'name' => 'post to twitter',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'twitter_post',
   );
@@ -1207,6 +1263,7 @@ function basic_config_user_default_permissions() {
     'name' => 'rename features',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'features',
   );
@@ -1216,6 +1273,7 @@ function basic_config_user_default_permissions() {
     'name' => 'revert revisions',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -1225,6 +1283,7 @@ function basic_config_user_default_permissions() {
     'name' => 'select account cancellation method',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'user',
   );
@@ -1234,6 +1293,7 @@ function basic_config_user_default_permissions() {
     'name' => 'show format selection for comment',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'better_formats',
   );
@@ -1243,6 +1303,7 @@ function basic_config_user_default_permissions() {
     'name' => 'show format selection for file',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'better_formats',
   );
@@ -1252,6 +1313,7 @@ function basic_config_user_default_permissions() {
     'name' => 'show format selection for node',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'better_formats',
   );
@@ -1261,6 +1323,7 @@ function basic_config_user_default_permissions() {
     'name' => 'show format selection for taxonomy_term',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'better_formats',
   );
@@ -1270,6 +1333,7 @@ function basic_config_user_default_permissions() {
     'name' => 'show format selection for user',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'better_formats',
   );
@@ -1279,6 +1343,7 @@ function basic_config_user_default_permissions() {
     'name' => 'show format tips',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'better_formats',
   );
@@ -1288,6 +1353,7 @@ function basic_config_user_default_permissions() {
     'name' => 'show more format tips link',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'better_formats',
   );
@@ -1297,6 +1363,7 @@ function basic_config_user_default_permissions() {
     'name' => 'skip comment approval',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'comment',
   );
@@ -1306,6 +1373,7 @@ function basic_config_user_default_permissions() {
     'name' => 'switch users',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'devel',
   );
@@ -1315,6 +1383,7 @@ function basic_config_user_default_permissions() {
     'name' => 'unlock feed feeds',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'feeds',
   );
@@ -1324,6 +1393,7 @@ function basic_config_user_default_permissions() {
     'name' => 'unlock opml feeds',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'feeds',
   );
@@ -1334,6 +1404,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'php',
   );
@@ -1343,6 +1414,7 @@ function basic_config_user_default_permissions() {
     'name' => 'use PHP for title patterns',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'auto_nodetitle',
   );
@@ -1352,6 +1424,7 @@ function basic_config_user_default_permissions() {
     'name' => 'use ctools import',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'ctools',
   );
@@ -1362,6 +1435,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'media_wysiwyg',
   );
@@ -1372,6 +1446,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'page_manager',
   );
@@ -1395,6 +1470,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
       'Title Administrator' => 'Title Administrator',
     ),
     'module' => 'filter',
@@ -1419,6 +1495,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'filter',
   );
@@ -1428,6 +1505,7 @@ function basic_config_user_default_permissions() {
     'name' => 'view files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
@@ -1439,6 +1517,7 @@ function basic_config_user_default_permissions() {
     'name' => 'view own files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -1448,6 +1527,7 @@ function basic_config_user_default_permissions() {
     'name' => 'view own private files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -1458,6 +1538,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Contributor' => 'Contributor',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -1468,6 +1549,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'statistics',
   );
@@ -1477,6 +1559,7 @@ function basic_config_user_default_permissions() {
     'name' => 'view private files',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
   );
@@ -1486,6 +1569,7 @@ function basic_config_user_default_permissions() {
     'name' => 'view revisions',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'node',
   );
@@ -1496,6 +1580,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Developer' => 'Developer',
+      'Editor' => 'Editor',
     ),
     'module' => 'system',
   );

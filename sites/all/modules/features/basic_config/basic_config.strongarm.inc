@@ -48,6 +48,13 @@ function basic_config_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'filter_fallback_format';
+  $strongarm->value = 'plain_text';
+  $export['filter_fallback_format'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'globalredirect_settings';
   $strongarm->value = array(
     'menu_check' => 1,
@@ -221,7 +228,7 @@ function basic_config_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'user_admin_role';
-  $strongarm->value = '6';
+  $strongarm->value = '3';
   $export['user_admin_role'] = $strongarm;
 
   $strongarm = new stdClass();
