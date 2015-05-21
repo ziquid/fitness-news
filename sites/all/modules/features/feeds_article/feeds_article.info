@@ -3,6 +3,7 @@ description = Turn RSS feeds into Articles
 core = 7.x
 package = GDG Features
 version = 7.x-0.03
+project = feeds_article
 dependencies[] = basic_config
 dependencies[] = ctools
 dependencies[] = date

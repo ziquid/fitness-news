@@ -30,6 +30,7 @@ $conf['master_modules'] = array(
     'job_scheduler',
     'lightbox2',
     'link',
+    'list',
     'logintoboggan',
     'markdown',
     'media_internet',
