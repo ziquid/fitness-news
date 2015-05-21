@@ -10,22 +10,149 @@ function feeds_article_node_presave($node) {
   if ($node->type == 'article') {
 
 // check relevance
+
+    $weightings = array(
+
+      'beauty' => array(
+        'beauty' => 3,
+        'makeup' => 3,
+        'sex' => 2,
+      ),
+
+      'health' => array(
+        'health' => 3,
+        'nutrition' => 3,
+        'diet' => 3,
+        'sex' => 2,
+      ),
+
+      'fitness' => array(
+        'fitness' => 3,
+        'gym' => 3,
+        'shape' => 3,
+        'sex' => 2,
+      ),
+
+      'sex' => array(
+        'sex' => 3,
+        'date' => 3,
+        'sexy' => 2,
+      ),
+
+    );
+
+    $text_only = filter_xss(
+      decode_entities(
+        $node->field_imported_description[LANGUAGE_NONE][0]['value']
+      ),
+      array()
+    );
+
+    $title_text_only = filter_xss(
+      decode_entities(
+        $node->field_imported_title[LANGUAGE_NONE][0]['value']
+      ),
+      array()
+    );
+
+// generate score for each section based on term ranking
+
+    $scores = array();
+    $log = '';
+
+    foreach ($weightings as $section => $weighting) {
+
+      $scores[$section] = 0;
+      $log_terms = '';
+
+      foreach ($weighting as $term => $weight) {
+
+// title matches
+        $matches = array();
+        preg_match_all('/\b' . $term . '\b/i', $title_text_only, $matches,
+          PREG_OFFSET_CAPTURE);
+        $num_matches = sizeof($matches[0]);
+
+        if ($num_matches > 0) {
+
+          $extra_weight = $num_matches * $weight * 3;
+          $scores[$section] += $extra_weight;
+          $log_terms .= $extra_weight . ': ' . $term . ' (title)';
+
+          ($num_matches > 1) && $log_terms .= ' x ' . $num_matches;
+
+          $log_terms .= "\n";
+
+        } // any matches?
+
+// body matches
+        $matches = array();
+        preg_match_all('/\b' . $term . '\b/i', $text_only, $matches,
+          PREG_OFFSET_CAPTURE);
+        $num_matches = sizeof($matches[0]);
+
+        if ($num_matches > 0) {
+
+          $extra_weight = $num_matches * $weight;
+          $scores[$section] += $extra_weight;
+          $log_terms .= $extra_weight . ': ' . $term;
+
+          ($num_matches > 1) && $log_terms .= ' x ' . $num_matches;
+
+          $log_terms .= "\n";
+
+        } // any matches?
+
+      } // foreach term
+
+      $log .= 'Section ' . $section . ' (score: ' . $scores[$section] . ")\n"
+      . $log_terms . "\n";
+
+    } // foreach section
+
+    $log .= "Raw text\n------------\n\n" . $text_only;
+
     $node->field_relevance_log = array(
       LANGUAGE_NONE => array(
         0 => array(
-
-          'value' => filter_xss(
-            decode_entities(
-              $node->field_imported_description[LANGUAGE_NONE][0]['value']
-            ),
-            array()
-          ),
-
+          'value' => $log,
         ),
       ),
     );
 
-  }
+// save highest relevance
+
+    $relevance = 0;
+    $relevance_section = '';
+
+    foreach ($scores as $section => $score) {
+
+      if ($score > $relevance) {
+
+        $relevance = $score;
+        $relevance_section = $section;
+
+      }
+
+    }
+
+    $node->field_highest_relevance = array(
+      LANGUAGE_NONE => array(
+        0 => array(
+          'value' => $relevance,
+        ),
+      ),
+    );
+
+    $node->field_highest_relevance_section = array(
+      LANGUAGE_NONE => array(
+        0 => array(
+          'value' => $relevance_section,
+        ),
+      ),
+    );
+
+  } // feed item to process?
 
 //     dpm($node, $node->title);
 
