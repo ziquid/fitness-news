@@ -29,11 +29,35 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'adelle';
   font-weight: normal;
-  margin: 0;
 }
 
 h1 {
   font-size: 3.3em;
+  margin: 0;
+}
+
+h2 {
+  margin: 1em 0 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 1em 0 0;
 }
 
 .field-name-field-dek {
