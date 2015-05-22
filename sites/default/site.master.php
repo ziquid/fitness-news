@@ -18,7 +18,6 @@ $conf['master_modules'] = array(
     'entityreference',
     'features',
     'feeds',
-    'feeds_article',
     'feeds_tamper',
     'field_group',
     'fontyourface_ui',
@@ -57,7 +56,10 @@ $conf['master_modules'] = array(
     'update',
     'video_embed_field',
 
+// GDG modules
     'basic_config',
+    'feeds_article',
+    'section_taxonomy',
   ),
 
   'local' => array(
