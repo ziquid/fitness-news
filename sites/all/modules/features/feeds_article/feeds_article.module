@@ -243,8 +243,8 @@ function feeds_article_node_presave($node) {
 
 // publish or promote?
 
-    ($relevance > 10) && $node->status = 1;
-    ($relevance > 20) && $node->promote = 1;
+    $node->status = ($relevance > 10) ? 1 : 0;
+    $node->promote = ($relevance > 20) ? 1 : 0;
 
   } // feed item to process?
 
