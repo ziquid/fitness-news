@@ -901,6 +901,15 @@ function basic_config_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete terms in sections'.
+  $permissions['delete terms in sections'] = array(
+    'name' => 'delete terms in sections',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'taxonomy',
+  );
+
   // Exported permission: 'display drupal links'.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
@@ -1142,6 +1151,15 @@ function basic_config_user_default_permissions() {
       'Editor' => 'Editor',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'edit terms in sections'.
+  $permissions['edit terms in sections'] = array(
+    'name' => 'edit terms in sections',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: 'execute php code'.

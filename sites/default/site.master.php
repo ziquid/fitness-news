@@ -63,6 +63,7 @@ $conf['master_modules'] = array(
   'local' => array(
     'dblog',
     'devel',
+    'diff',
     'feeds_tamper_ui',
     'feeds_ui',
     'field_ui',
@@ -73,6 +74,7 @@ $conf['master_modules'] = array(
   'dev' => array(
     'dblog',
     'devel',
+    'diff',
     'feeds_tamper_ui',
     'feeds_ui',
     'field_ui',
