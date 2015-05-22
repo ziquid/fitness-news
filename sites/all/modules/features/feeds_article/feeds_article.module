@@ -28,6 +28,7 @@ function feeds_article_node_presave($node) {
         'badass' => -100,
         'damn' => -100,
         'f---' => -100,
+        'f*ck' => -100,
 
       ),
 
@@ -52,6 +53,7 @@ function feeds_article_node_presave($node) {
         'badass' => -100,
         'damn' => -100,
         'f---' => -100,
+        'f*ck' => -100,
 
       ),
 
@@ -80,6 +82,7 @@ function feeds_article_node_presave($node) {
         'badass' => -100,
         'damn' => -100,
         'f---' => -100,
+        'f*ck' => -100,
 
       ),
 
@@ -121,6 +124,7 @@ function feeds_article_node_presave($node) {
         'badass' => -100,
         'damn' => -100,
         'f---' => -100,
+        'f*ck' => -100,
 
       ),
 
