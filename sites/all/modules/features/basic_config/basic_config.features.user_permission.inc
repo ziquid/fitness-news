@@ -906,6 +906,7 @@ function basic_config_user_default_permissions() {
     'name' => 'delete terms in sections',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'taxonomy',
   );
@@ -1158,6 +1159,7 @@ function basic_config_user_default_permissions() {
     'name' => 'edit terms in sections',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Editor' => 'Editor',
     ),
     'module' => 'taxonomy',
   );
