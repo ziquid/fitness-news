@@ -114,7 +114,7 @@ function feeds_article_feeds_importer_default() {
           ),
         ),
         'input_format' => 'limited_html',
-        'author' => '2',
+        'author' => '7',
         'authorize' => 1,
         'skip_hash_check' => 0,
       ),
