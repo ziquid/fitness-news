@@ -21,7 +21,7 @@ function feeds_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Generated Data',
-    'weight' => '4',
+    'weight' => '6',
     'children' => array(
       0 => 'field_highest_relevance',
       1 => 'field_highest_relevance_section',
@@ -50,18 +50,18 @@ function feeds_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Imported Data',
-    'weight' => '3',
+    'weight' => '5',
     'children' => array(
       0 => 'field_imported_author',
       1 => 'field_imported_categories',
       2 => 'field_imported_description',
-      3 => 'field_imported_node_id',
-      4 => 'field_imported_user_id',
-      5 => 'field_imported_geo_locations',
-      6 => 'field_imported_guid',
-      7 => 'field_imported_url',
-      8 => 'field_imported_title',
-      9 => 'field_imported_published_date',
+      3 => 'field_imported_geo_locations',
+      4 => 'field_imported_guid',
+      5 => 'field_imported_node_id',
+      6 => 'field_imported_published_date',
+      7 => 'field_imported_title',
+      8 => 'field_imported_url',
+      9 => 'field_imported_user_id',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

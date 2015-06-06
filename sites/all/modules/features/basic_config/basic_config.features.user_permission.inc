@@ -43,6 +43,24 @@ function basic_config_user_default_permissions() {
     'module' => 'views',
   );
 
+  // Exported permission: 'access backup and migrate'.
+  $permissions['access backup and migrate'] = array(
+    'name' => 'access backup and migrate',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
+  // Exported permission: 'access backup files'.
+  $permissions['access backup files'] = array(
+    'name' => 'access backup files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
   // Exported permission: 'access comments'.
   $permissions['access comments'] = array(
     'name' => 'access comments',
@@ -256,6 +274,15 @@ function basic_config_user_default_permissions() {
       'Editor' => 'Editor',
     ),
     'module' => 'system',
+  );
+
+  // Exported permission: 'administer backup and migrate'.
+  $permissions['administer backup and migrate'] = array(
+    'name' => 'administer backup and migrate',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
   );
 
   // Exported permission: 'administer block classes'.
@@ -830,6 +857,15 @@ function basic_config_user_default_permissions() {
     'module' => 'file_entity',
   );
 
+  // Exported permission: 'delete backup files'.
+  $permissions['delete backup files'] = array(
+    'name' => 'delete backup files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
   // Exported permission: 'delete own article content'.
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
@@ -1257,6 +1293,15 @@ function basic_config_user_default_permissions() {
     'module' => 'oauth_common',
   );
 
+  // Exported permission: 'perform backup'.
+  $permissions['perform backup'] = array(
+    'name' => 'perform backup',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
+  );
+
   // Exported permission: 'post comments'.
   $permissions['post comments'] = array(
     'name' => 'post comments',
@@ -1286,6 +1331,15 @@ function basic_config_user_default_permissions() {
       'Editor' => 'Editor',
     ),
     'module' => 'features',
+  );
+
+  // Exported permission: 'restore from backup'.
+  $permissions['restore from backup'] = array(
+    'name' => 'restore from backup',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'backup_migrate',
   );
 
   // Exported permission: 'revert revisions'.
