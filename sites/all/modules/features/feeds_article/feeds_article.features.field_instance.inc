@@ -21,7 +21,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'trim_length' => 800,
+          'trim_length' => 1000,
         ),
         'type' => 'text_summary_or_trimmed',
         'weight' => 2,
@@ -30,7 +30,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(
-          'trim_length' => 800,
+          'trim_length' => 155,
         ),
         'type' => 'text_summary_or_trimmed',
         'weight' => 2,
@@ -778,9 +778,8 @@ function feeds_article_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'hidden',
         'weight' => 14,
       ),
       'teaser' => array(

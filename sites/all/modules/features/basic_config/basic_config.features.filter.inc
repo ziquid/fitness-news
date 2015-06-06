@@ -229,7 +229,7 @@ function basic_config_filter_default_formats() {
         'weight' => -49,
         'status' => 1,
         'settings' => array(
-          'allowed_html' => '<em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <div> <p> <br> <img> <big> <h2>',
+          'allowed_html' => '<em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <p> <br> <big> <h2>',
           'filter_html_help' => 1,
           'filter_html_nofollow' => 1,
         ),

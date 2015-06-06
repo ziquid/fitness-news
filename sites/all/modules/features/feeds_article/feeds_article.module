@@ -17,6 +17,9 @@ function feeds_article_score($node) {
 
 // check relevance
 
+  $allowed_tags = explode(' ',
+    '<em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <p> <br> <big> <h2>');
+
   $weightings = array(
 
     'Beauty' => array(
@@ -273,6 +276,19 @@ function feeds_article_score($node) {
 // save URL
 
   $node->field_more_info_link = $node->field_imported_url;
+
+// save body
+
+  $node->body = array(
+      LANGUAGE_NONE => array(
+        0 => array(
+          'value' => filter_xss(
+             $node->field_imported_description[LANGUAGE_NONE][0]['value'],
+             $allowed_tags),
+          'format' => 'limited_html',
+        ),
+      ),
+    );
 
 // publish or promote?
 

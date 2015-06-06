@@ -58,56 +58,51 @@ function feeds_article_feeds_importer_default() {
             'unique' => 1,
           ),
           4 => array(
-            'source' => 'description',
-            'target' => 'body',
-            'unique' => FALSE,
-          ),
-          5 => array(
             'source' => 'author_name',
             'target' => 'field_imported_author',
             'unique' => FALSE,
           ),
-          6 => array(
+          5 => array(
             'source' => 'tags',
             'target' => 'field_imported_categories',
             'unique' => FALSE,
           ),
-          7 => array(
+          6 => array(
             'source' => 'description',
             'target' => 'field_imported_description',
             'unique' => FALSE,
           ),
-          8 => array(
+          7 => array(
             'source' => 'parent:nid',
             'target' => 'field_imported_node_id',
             'unique' => FALSE,
           ),
-          9 => array(
+          8 => array(
             'source' => 'parent:uid',
             'target' => 'field_imported_user_id',
             'unique' => FALSE,
           ),
-          10 => array(
+          9 => array(
             'source' => 'geolocations',
             'target' => 'field_imported_geo_locations',
             'unique' => FALSE,
           ),
-          11 => array(
+          10 => array(
             'source' => 'guid',
             'target' => 'field_imported_guid',
             'unique' => FALSE,
           ),
-          12 => array(
+          11 => array(
             'source' => 'url',
             'target' => 'field_imported_url',
             'unique' => FALSE,
           ),
-          13 => array(
+          12 => array(
             'source' => 'timestamp',
             'target' => 'field_imported_published_date:start',
             'unique' => FALSE,
           ),
-          14 => array(
+          13 => array(
             'source' => 'title',
             'target' => 'field_imported_title',
             'unique' => FALSE,
