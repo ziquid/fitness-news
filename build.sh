@@ -1,6 +1,9 @@
 #!/bin/bash
 
-DRUSH=d7
+DRUSH=`which d7`
+[ "$DRUSH" == "" ] && DRUSH=`which d6`
+[ "$DRUSH" == "" ] && DRUSH=`which drush`
+
 SCOPE=local
 
 $DRUSH -y -q make gdg.make

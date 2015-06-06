@@ -159,8 +159,10 @@ body.two-sidebars #sidebar-first {
 }
 
 .section {
-  margin: 0px;
+  margin: 0px 54px 0 0;
 }
+
+
 
 
 div.tabs {
@@ -174,7 +176,6 @@ ul.tabs.primary {
   margin: 0;
   padding: 0;
   position: absolute;
-  right: -54px;
 }
 
 ul.tabs.primary li a {

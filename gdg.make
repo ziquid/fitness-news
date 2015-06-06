@@ -16,6 +16,9 @@ projects[adminrole][version] = "1.0"
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][version] = "1.0"
 
+projects[backup_migrate][subdir] = "contrib"
+projects[backup_migrate][version] = "3.1"
+
 projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.0-beta1"
 
