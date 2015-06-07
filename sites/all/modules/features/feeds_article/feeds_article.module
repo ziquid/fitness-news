@@ -18,7 +18,7 @@ function feeds_article_score($node) {
 // check relevance
 
   $allowed_tags = explode(' ',
-    '<em> <strong> <cite> <blockquote> <code> <ul> <ol> <li> <dl> <dt> <dd> <p> <br> <big> <h2>');
+    'em strong cite blockquote code ul ol li dl dt dd p br big h2');
 
   $weightings = array(
 

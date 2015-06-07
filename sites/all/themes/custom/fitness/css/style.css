@@ -7,6 +7,19 @@ a#logo {
 }
 
 
+#main-wrapper {
+  padding: 12px 54px 18px;
+  background-color: initial;
+  color: black;
+}
+
+
+h1 {
+  font-size: 2.8em;
+  line-height: 1.2em;
+}
+
+
 .section {
   margin: 0;
 }
@@ -22,6 +35,7 @@ ul.nice-menu-main-menu li {
   background-color: initial;
   text-transform: uppercase;
   text-align: center;
+  padding: 3px 0 4px;
 }
 
 ul.nice-menu-main-menu li.menu-path-taxonomy-term-1 {
