@@ -85,8 +85,11 @@ function feeds_article_score($node) {
       'sex' => 2,
       'testosterone' => 3,
       'weight' => 2,
+      'weights' => 3,
       'workout' => 3,
+      'workouts' => 3,
       'work out' => 3,
+      'working out' => 3,
       'yoga' => 3,
       'zumba' => 3,
 

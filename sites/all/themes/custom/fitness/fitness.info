@@ -1,0 +1,15 @@
+name = Fitness
+description = Fitness Theme, based on GDG
+core = 7.x
+base theme = gdg
+
+stylesheets[all][] = css/style.css
+
+fonts[typekit_api][] = "adelle-web#n7"
+fonts[typekit_api][] = "adelle-web#i7"
+fonts[typekit_api][] = "adelle-web#i4"
+fonts[typekit_api][] = "adelle-web#n4"
+fonts[typekit_api][] = "jaf-facitweb#n7"
+fonts[typekit_api][] = "jaf-facitweb#i7"
+fonts[typekit_api][] = "jaf-facitweb#i4"
+fonts[typekit_api][] = "jaf-facitweb#n4"

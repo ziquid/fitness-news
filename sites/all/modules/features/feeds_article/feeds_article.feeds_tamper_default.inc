@@ -17,7 +17,7 @@ function feeds_article_feeds_tamper_default() {
   $feeds_tamper->importer = 'feed';
   $feeds_tamper->source = 'description';
   $feeds_tamper->plugin_id = 'absolute_url';
-  $feeds_tamper->settings = '';
+  $feeds_tamper->settings = array();
   $feeds_tamper->weight = 0;
   $feeds_tamper->description = 'Make URLs absolute';
   $export['feed-description-absolute_url'] = $feeds_tamper;

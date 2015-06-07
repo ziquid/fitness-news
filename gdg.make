@@ -106,6 +106,9 @@ projects[media][version] = "2.x-dev"
 projects[metatag][subdir] = "contrib"
 projects[metatag][version] = "1.4"
 
+projects[nice_menus][subdir] = "contrib"
+projects[nice_menus][version] = "2.5"
+
 projects[noindex_external_links][subdir] = "contrib"
 projects[noindex_external_links][version] = "2.0-rc1"
 
@@ -126,6 +129,9 @@ projects[strongarm][version] = "2.0"
 
 projects[subpathauto][subdir] = "contrib"
 projects[subpathauto][version] = "1.3"
+
+projects[taxonomy_menu][subdir] = "contrib"
+projects[taxonomy_menu][version] = "1.5"
 
 projects[token][subdir] = "contrib"
 projects[token][version] = "1.6"

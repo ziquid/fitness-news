@@ -1,0 +1,49 @@
+a#logo {
+  float: none;
+}
+
+#header {
+  height: initial;
+}
+
+
+.section {
+  margin: 0;
+}
+
+ul.nice-menu-main-menu {
+  width: calc(100% + 92px);
+  margin: 12px -41px 0;
+}
+
+ul.nice-menu-main-menu li {
+  width: 24.75%;
+  border: none;
+  background-color: initial;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+ul.nice-menu-main-menu li.menu-path-taxonomy-term-1 {
+  background-color: #1d3;
+}
+
+ul.nice-menu-main-menu li.menu-path-taxonomy-term-2 {
+  background-color: #1dd;
+}
+
+ul.nice-menu-main-menu li.menu-path-taxonomy-term-3 {
+  background-color: #31d;
+}
+
+ul.nice-menu-main-menu li.menu-path-taxonomy-term-4 {
+  background-color: #d13;
+}
+
+ul.nice-menu-main-menu li a,
+ul.nice-menu-main-menu li a:active,
+ul.nice-menu-main-menu li a:focus,
+ul.nice-menu-main-menu li a:hover,
+ul.nice-menu-main-menu li a:visited {
+  color: white;
+}
