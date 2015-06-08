@@ -342,6 +342,21 @@ function feeds_article_field_default_field_bases() {
     'type' => 'text_long',
   );
 
+  // Exported field_base: 'field_score'
+  $field_bases['field_score'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_score',
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'number',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'number_integer',
+  );
+
   // Exported field_base: 'field_section'
   $field_bases['field_section'] = array(
     'active' => 1,

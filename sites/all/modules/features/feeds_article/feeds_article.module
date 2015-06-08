@@ -6,8 +6,8 @@ include_once('feeds_article.features.inc');
 
 function feeds_article_node_presave($node) {
 
-//   if ($node->log == 'Created by FeedsNodeProcessor')
-  if ($node->type == 'article')
+  if ($node->log == 'Created by FeedsNodeProcessor')
+//   if ($node->type == 'article')
     feeds_article_score($node);
 
 }
@@ -258,6 +258,17 @@ function feeds_article_score($node) {
     ),
   );
 
+  $relevance_decay = (int) ((time() - $node->field_imported_published_date
+    [LANGUAGE_NONE][0]['value']) / 3600);
+
+  $node->field_score = array(
+    LANGUAGE_NONE => array(
+      0 => array(
+        'value' => $relevance - $relevance_decay,
+      ),
+    ),
+  );
+
 // save section
 
   $section_tids = array_values(
@@ -299,5 +310,41 @@ function feeds_article_score($node) {
   $node->promote = ($relevance > 20) ? 1 : 0;
 
 //     dpm($node, $node->title);
+
+}
+
+
+function feeds_article_cron() {
+
+  $query = new EntityFieldQuery();
+
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'article')
+    ->propertyCondition('status', NODE_PUBLISHED)
+    ->fieldCondition('field_score', 'value', 0, '>')
+    ->addMetaData('account', user_load(1)); // Run the query as user 1.
+
+  $result = $query->execute();
+
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    $articles = entity_load('node', $nids);
+
+    drupal_set_message(
+      t('%num nodes are still alive.', array('%num' => count($nids)))
+    );
+
+    foreach ($articles as $node) {
+
+      feeds_article_score($node);
+      node_save($node);
+
+    }
+
+  } else {
+
+    drupal_set_message(t('No nodes are still alive.'));
+
+  }
 
 }

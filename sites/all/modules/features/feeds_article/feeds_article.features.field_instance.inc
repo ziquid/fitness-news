@@ -907,7 +907,7 @@ function feeds_article_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -1038,6 +1038,46 @@ function feeds_article_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-article-field_score'
+  $field_instances['node-article-field_score'] = array(
+    'bundle' => 'article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 17,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_score',
+    'label' => 'Score',
+    'required' => 0,
+    'settings' => array(
+      'max' => '',
+      'min' => '',
+      'prefix' => '',
+      'suffix' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'number',
+      'settings' => array(),
+      'type' => 'number',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-article-field_section'
   $field_instances['node-article-field_section'] = array(
     'bundle' => 'article',
@@ -1094,6 +1134,7 @@ function feeds_article_field_default_field_instances() {
   t('Imported User ID');
   t('More Info Link');
   t('Relevance Log');
+  t('Score');
   t('Section');
 
   return $field_instances;
