@@ -21,7 +21,8 @@ function feeds_article_menu() {
 
 function feeds_article_node_presave($node) {
 
-  if ($node->log == 'Created by FeedsNodeProcessor')
+  if (($node->log == 'Created by FeedsNodeProcessor') ||
+    (@$node->field_rescore[LANGUAGE_NONE][0]['value'] == 1))
 //   if ($node->type == 'article')
     feeds_article_score($node);
 
@@ -198,6 +199,14 @@ function feeds_article_score($node) {
 
 // generate score for each section based on term ranking
 
+  if (@$node->field_rescore[LANGUAGE_NONE][0]['value'] == 1) { // rescoring
+    drupal_set_message(t('Rescoring: old relevance was %relevance, %section.',
+      array('%relevance' => @$node->field_highest_relevance
+        [LANGUAGE_NONE][0]['value'],
+        '%section' => @$node->field_highest_relevance_section
+        [LANGUAGE_NONE][0]['value'])));
+  }
+
   $scores = array();
   $log = '';
 
@@ -277,6 +286,14 @@ function feeds_article_score($node) {
 
   }
 
+  if (@$node->field_rescore[LANGUAGE_NONE][0]['value'] == 1) { // rescoring
+    drupal_set_message(t('Rescoring: new relevance is %relevance, %section.',
+      array('%relevance' => @$node->field_highest_relevance
+        [LANGUAGE_NONE][0]['value'],
+        '%section' => @$node->field_highest_relevance_section
+        [LANGUAGE_NONE][0]['value'])));
+  }
+
   $node->field_highest_relevance = array(
     LANGUAGE_NONE => array(
       0 => array(
@@ -331,6 +348,11 @@ function feeds_article_score($node) {
 // save title
 
   $node->title = filter_xss($node->title, array());
+
+// delete log
+
+  $node->log = 'Scored';
+  $node->field_rescore = array();
 
 // save body
 

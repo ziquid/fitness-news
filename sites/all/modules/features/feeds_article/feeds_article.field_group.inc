@@ -21,7 +21,7 @@ function feeds_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Generated Data',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_highest_relevance',
       1 => 'field_highest_relevance_section',

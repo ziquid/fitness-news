@@ -1034,7 +1034,50 @@ function feeds_article_field_default_field_instances() {
         'rows' => 15,
       ),
       'type' => 'text_textarea',
-      'weight' => 28,
+      'weight' => 29,
+    ),
+  );
+
+  // Exported field_instance: 'node-article-field_rescore'
+  $field_instances['node-article-field_rescore'] = array(
+    'bundle' => 'article',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => 'Check this box to have the system rescore this article after you save.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 18,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_rescore',
+    'label' => 'Rescore',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 7,
     ),
   );
 
@@ -1119,6 +1162,7 @@ function feeds_article_field_default_field_instances() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Check this box to have the system rescore this article after you save.');
   t('Deck');
   t('Highest Relevance');
   t('Highest Relevance Section');
@@ -1134,6 +1178,7 @@ function feeds_article_field_default_field_instances() {
   t('Imported User ID');
   t('More Info Link');
   t('Relevance Log');
+  t('Rescore');
   t('Score');
   t('Section');
 
