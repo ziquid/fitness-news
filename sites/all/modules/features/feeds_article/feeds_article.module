@@ -296,10 +296,8 @@ function feeds_article_score($node) {
 
   if (@$node->field_rescore[LANGUAGE_NONE][0]['value'] == 1) { // rescoring
     drupal_set_message(t('Rescoring: new relevance is %relevance, %section.',
-      array('%relevance' => @$node->field_highest_relevance
-        [LANGUAGE_NONE][0]['value'],
-        '%section' => @$node->field_highest_relevance_section
-        [LANGUAGE_NONE][0]['value'])));
+      array('%relevance' => $relevance,
+        '%section' => $section)));
   }
 
   $node->field_highest_relevance = array(
