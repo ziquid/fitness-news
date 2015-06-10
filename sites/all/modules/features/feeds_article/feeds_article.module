@@ -4,6 +4,21 @@
 
 include_once('feeds_article.features.inc');
 
+
+function feeds_article_menu() {
+
+  $items = array();
+
+  $items['admin/rescore'] = array(
+    'page callback' => 'feeds_article_rescore_wrapper',
+    'access arguments' => array('administer nodes'),
+  );
+
+  return $items;
+
+}
+
+
 function feeds_article_node_presave($node) {
 
   if ($node->log == 'Created by FeedsNodeProcessor')
@@ -23,6 +38,7 @@ function feeds_article_score($node) {
   $weightings = array(
 
     'Beauty' => array(
+      'acne' => 3,
       'beauty' => 3,
       'chic' => 3,
       'cosmetic' => 3,
@@ -31,6 +47,7 @@ function feeds_article_score($node) {
       'cuteness' => 3,
       'lips' => 3,
       'makeup' => 3,
+      'pimples' => 3,
       'sex' => 2,
       'skin' => 2,
 
@@ -52,6 +69,7 @@ function feeds_article_score($node) {
       'hospital' => 3,
       'hospitals' => 3,
       'nutrition' => 3,
+      'oxygen' => 2,
       'pregnant' => 3,
       'pregnancy' => 3,
       'sex' => 2,
@@ -260,11 +278,12 @@ function feeds_article_score($node) {
 
   $relevance_decay = (int) ((time() - $node->field_imported_published_date
     [LANGUAGE_NONE][0]['value']) / 3600);
+  $score = $relevance - $relevance_decay;
 
   $node->field_score = array(
     LANGUAGE_NONE => array(
       0 => array(
-        'value' => $relevance - $relevance_decay,
+        'value' => $score,
       ),
     ),
   );
@@ -291,6 +310,11 @@ function feeds_article_score($node) {
 
   $node->field_more_info_link = $node->field_imported_url;
 
+
+// save title
+
+  $node->title = filter_xss($node->title, array());
+
 // save body
 
   $node->body = array(
@@ -306,8 +330,8 @@ function feeds_article_score($node) {
 
 // publish or promote?
 
-  $node->status = ($relevance > 10) ? 1 : 0;
-  $node->promote = ($relevance > 20) ? 1 : 0;
+  $node->status = ($score > 10) ? 1 : 0;
+  $node->promote = ($score > 20) ? 1 : 0;
 
 //     dpm($node, $node->title);
 
@@ -316,12 +340,19 @@ function feeds_article_score($node) {
 
 function feeds_article_cron() {
 
+  return feeds_article_rescore();
+
+}
+
+
+function feeds_article_rescore() {
+
   $query = new EntityFieldQuery();
 
   $query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'article')
-    ->propertyCondition('status', NODE_PUBLISHED)
-    ->fieldCondition('field_score', 'value', 0, '>')
+    ->fieldCondition('field_imported_published_date', 'value', time() - 345600,
+      '>')
     ->addMetaData('account', user_load(1)); // Run the query as user 1.
 
   $result = $query->execute();
@@ -346,5 +377,14 @@ function feeds_article_cron() {
     drupal_set_message(t('No nodes are still alive.'));
 
   }
+
+}
+
+
+function feeds_article_rescore_wrapper() {
+
+  feeds_article_rescore();
+  drupal_set_message('Article rescore completed.');
+  return 'Article rescore completed.';
 
 }

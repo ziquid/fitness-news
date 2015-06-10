@@ -61,6 +61,7 @@ $conf['master_modules'] = array(
 
 // GDG modules
     'basic_config',
+    'content_dashboard',
     'feeds_article',
     'section_taxonomy',
   ),
