@@ -196,7 +196,7 @@ function feeds_article_score($node) {
 
   $text_only = filter_xss(
     decode_entities(
-      $node->field_imported_description[LANGUAGE_NONE][0]['value']
+      @$node->field_imported_description[LANGUAGE_NONE][0]['value']
     ),
     array()
   );
@@ -369,7 +369,7 @@ function feeds_article_score($node) {
       LANGUAGE_NONE => array(
         0 => array(
           'value' => filter_xss(
-             $node->field_imported_description[LANGUAGE_NONE][0]['value'],
+             @$node->field_imported_description[LANGUAGE_NONE][0]['value'],
              $allowed_tags),
           'format' => 'limited_html',
         ),
