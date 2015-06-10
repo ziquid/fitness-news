@@ -101,6 +101,8 @@ function feeds_article_score($node) {
       'shape' => 1,
       'self-defense' => 3,
       'sex' => 2,
+      'sport' => 3,
+      'tennis' => 3,
       'testosterone' => 3,
       'weight' => 2,
       'weights' => 3,
