@@ -62,15 +62,18 @@ function feeds_article_score($node) {
 
     'Health' => array(
       'clean' => 3,
+      'cooking' => 3,
       'cough' => 3,
       'diet' => 3,
       'diarrhea' => 3,
       'disease' => 3,
+      'garden' => 3,
       'health' => 3,
       'healthiest' => 3,
       'healthy' => 3,
       'hospital' => 3,
       'hospitals' => 3,
+      'mealtime' => 3,
       'nutrition' => 3,
       'oxygen' => 2,
       'pregnant' => 3,
