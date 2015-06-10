@@ -24,6 +24,7 @@ body {
   background-color: #fffaff;
   color: #2b3;
   margin: 0 40px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -176,6 +177,8 @@ ul.tabs.primary {
   margin: 0;
   padding: 0;
   position: absolute;
+  right: 0px;
+  z-index: 9;
 }
 
 ul.tabs.primary li a {

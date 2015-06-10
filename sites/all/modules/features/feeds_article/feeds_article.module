@@ -79,6 +79,7 @@ function feeds_article_score($node) {
       'skin' => 2,
       'sick' => 3,
       'sickness' => 3,
+      'smoking' => 3,
       'weight' => 3,
 
       'badass' => -100,
@@ -102,6 +103,10 @@ function feeds_article_score($node) {
       'exercises' => 3,
       'fitness' => 3,
       'gym' => 3,
+      'jog' => 3,
+      'jogging' => 3,
+      'jogs' => 3,
+      'jump rope' => 3,
       'kickbox' => 3,
       'kickboxer' => 3,
       'kickboxing' => 3,
