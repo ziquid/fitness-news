@@ -49,6 +49,9 @@ projects[entity][version] = "1.6"
 projects[entityreference][subdir] = "contrib"
 projects[entityreference][version] = "1.1"
 
+projects[exif_custom][subdir] = "contrib"
+projects[exif_custom][version] = "1.14"
+
 projects[features][subdir] = "contrib"
 projects[features][version] = "2.5"
 
@@ -56,7 +59,7 @@ projects[feeds][subdir] = "contrib"
 projects[feeds][version] = "2.0-alpha8"
 
 projects[feeds_tamper][subdir] = "contrib"
-projects[feeds_tamper][version] = "1.0"
+projects[feeds_tamper][version] = "1.1"
 
 projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.4"
@@ -104,7 +107,7 @@ projects[media][subdir] = "contrib"
 projects[media][version] = "2.x-dev"
 
 projects[metatag][subdir] = "contrib"
-projects[metatag][version] = "1.4"
+projects[metatag][version] = "1.5"
 
 projects[nice_menus][subdir] = "contrib"
 projects[nice_menus][version] = "2.5"
@@ -143,7 +146,7 @@ projects[typogrify][subdir] = "contrib"
 projects[typogrify][version] = "1.0-rc10"
 
 projects[video_embed_field][subdir] = "contrib"
-projects[video_embed_field][version] = "2.0-beta8"
+projects[video_embed_field][version] = "2.0-beta9"
 
 projects[views][subdir] = "contrib"
 projects[views][version] = "3.11"

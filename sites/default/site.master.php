@@ -17,6 +17,7 @@ $conf['master_modules'] = array(
     'draggableviews',
     'entity_token',
     'entityreference',
+    'exif_custom',
     'features',
     'feeds',
     'feeds_tamper',

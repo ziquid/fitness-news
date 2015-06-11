@@ -46,12 +46,17 @@ function feeds_article_score($node) {
       'cosmetics' => 3,
       'cute' => 3,
       'cuteness' => 3,
+      'dermatologist' => 3,
+      'hair' => 3,
+      'hairspray' => 3,
       'lips' => 3,
       'makeup' => 3,
+      'moisturizer' => 3,
       'pimples' => 3,
       'sex' => 2,
       'skin' => 2,
 
+      'a-hole' => -100,
       'badass' => -100,
       'damn' => -100,
       'f---' => -100,
@@ -85,6 +90,7 @@ function feeds_article_score($node) {
       'smoking' => 3,
       'weight' => 3,
 
+      'a-hole' => -100,
       'badass' => -100,
       'damn' => -100,
       'f---' => -100,
@@ -94,6 +100,7 @@ function feeds_article_score($node) {
     ),
 
     'Fitness' => array(
+      '5k' => 3,
       'active' => 2,
       'athlete' => 2,
       'barbell' => 3,
@@ -114,9 +121,13 @@ function feeds_article_score($node) {
       'kickboxer' => 3,
       'kickboxing' => 3,
       'muscle' => 3,
+      'pace' => 3,
       'plank' => 3,
+      'race' => 2,
       'run' => 2,
+      'runner' => 3,
       'running' => 3,
+      'runs' => 2,
       'shape' => 1,
       'self-defense' => 3,
       'sex' => 2,
@@ -128,6 +139,8 @@ function feeds_article_score($node) {
       'swimming' => 3,
       'tennis' => 3,
       'testosterone' => 3,
+      'training' => 3,
+      'treadmill' => 3,
       'weight' => 2,
       'weights' => 3,
       'workout' => 3,
@@ -137,6 +150,7 @@ function feeds_article_score($node) {
       'yoga' => 3,
       'zumba' => 3,
 
+      'a-hole' => -100,
       'badass' => -100,
       'damn' => -100,
       'f---' => -100,
@@ -184,6 +198,7 @@ function feeds_article_score($node) {
       'virgin' => 3,
       'virginity' => 3,
 
+      'a-hole' => -100,
       'badass' => -100,
       'damn' => -100,
       'f---' => -100,
@@ -300,7 +315,7 @@ function feeds_article_score($node) {
   if (@$node->field_rescore[LANGUAGE_NONE][0]['value'] == 1) { // rescoring
     drupal_set_message(t('Rescoring: new relevance is %relevance, %section.',
       array('%relevance' => $relevance,
-        '%section' => $section)));
+        '%section' => $relevance_section)));
   }
 
   $node->field_highest_relevance = array(
