@@ -407,6 +407,15 @@ function basic_config_user_default_permissions() {
     'module' => 'filter',
   );
 
+  // Exported permission: 'administer image metadata'.
+  $permissions['administer image metadata'] = array(
+    'name' => 'administer image metadata',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'exif_custom',
+  );
+
   // Exported permission: 'administer image styles'.
   $permissions['administer image styles'] = array(
     'name' => 'administer image styles',
@@ -1230,6 +1239,15 @@ function basic_config_user_default_permissions() {
     'module' => 'features',
   );
 
+  // Exported permission: 'have default image metadata profile'.
+  $permissions['have default image metadata profile'] = array(
+    'name' => 'have default image metadata profile',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'exif_custom',
+  );
+
   // Exported permission: 'import feed feeds'.
   $permissions['import feed feeds'] = array(
     'name' => 'import feed feeds',
@@ -1584,6 +1602,15 @@ function basic_config_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'file_entity',
+  );
+
+  // Exported permission: 'view image metadata'.
+  $permissions['view image metadata'] = array(
+    'name' => 'view image metadata',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'exif_custom',
   );
 
   // Exported permission: 'view own files'.

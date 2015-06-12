@@ -21,7 +21,7 @@ function feeds_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Generated Data',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_highest_relevance',
       1 => 'field_highest_relevance_section',
@@ -50,7 +50,7 @@ function feeds_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Imported Data',
-    'weight' => '6',
+    'weight' => '7',
     'children' => array(
       0 => 'field_imported_author',
       1 => 'field_imported_categories',
