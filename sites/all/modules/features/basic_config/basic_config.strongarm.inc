@@ -48,6 +48,45 @@ function basic_config_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'exif_custom_checks';
+  $strongarm->value = array(
+    'auto-import' => 'auto-import',
+  );
+  $export['exif_custom_checks'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'exif_custom_default';
+  $strongarm->value = 'Bigstock mapping';
+  $export['exif_custom_default'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'field_bundle_settings_file__image';
+  $strongarm->value = array(
+    'view_modes' => array(),
+    'extra_fields' => array(
+      'form' => array(
+        'filename' => array(
+          'weight' => '5',
+        ),
+        'preview' => array(
+          'weight' => '4',
+        ),
+        'redirect' => array(
+          'weight' => '6',
+        ),
+      ),
+      'display' => array(),
+    ),
+  );
+  $export['field_bundle_settings_file__image'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'filter_fallback_format';
   $strongarm->value = 'plain_text';
   $export['filter_fallback_format'] = $strongarm;
@@ -60,6 +99,13 @@ function basic_config_strongarm() {
     'menu_check' => 1,
   );
   $export['globalredirect_settings'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'metatag_enable_file__image';
+  $strongarm->value = FALSE;
+  $export['metatag_enable_file__image'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -102,6 +148,13 @@ function basic_config_strongarm() {
   $strongarm->name = 'page_compression';
   $strongarm->value = 0;
   $export['page_compression'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_file_image_pattern';
+  $strongarm->value = '';
+  $export['pathauto_file_image_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
