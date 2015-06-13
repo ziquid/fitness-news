@@ -589,18 +589,6 @@ function basic_config_user_default_permissions() {
     'module' => 'system',
   );
 
-  // Exported permission: 'administer stage_file_proxy settings'.
-  $permissions['administer stage_file_proxy settings'] = array(
-    'name' => 'administer stage_file_proxy settings',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'Developer' => 'Developer',
-      'Editor' => 'Editor',
-      'Title Administrator' => 'Title Administrator',
-    ),
-    'module' => 'stage_file_proxy',
-  );
-
   // Exported permission: 'administer statistics'.
   $permissions['administer statistics'] = array(
     'name' => 'administer statistics',
