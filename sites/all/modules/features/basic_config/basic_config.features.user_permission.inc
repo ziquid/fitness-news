@@ -104,16 +104,6 @@ function basic_config_user_default_permissions() {
     'module' => 'contextual',
   );
 
-  // Exported permission: 'access devel information'.
-  $permissions['access devel information'] = array(
-    'name' => 'access devel information',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'Editor' => 'Editor',
-    ),
-    'module' => 'devel',
-  );
-
   // Exported permission: 'access draggableviews'.
   $permissions['access draggableviews'] = array(
     'name' => 'access draggableviews',
@@ -1197,16 +1187,6 @@ function basic_config_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: 'execute php code'.
-  $permissions['execute php code'] = array(
-    'name' => 'execute php code',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'Editor' => 'Editor',
-    ),
-    'module' => 'devel',
-  );
-
   // Exported permission: 'flush caches'.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
@@ -1446,16 +1426,6 @@ function basic_config_user_default_permissions() {
       'Editor' => 'Editor',
     ),
     'module' => 'comment',
-  );
-
-  // Exported permission: 'switch users'.
-  $permissions['switch users'] = array(
-    'name' => 'switch users',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'Editor' => 'Editor',
-    ),
-    'module' => 'devel',
   );
 
   // Exported permission: 'unlock feed feeds'.

@@ -30,6 +30,30 @@ function feeds_article_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function feeds_article_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: 600x900.
+  $styles['600x900'] = array(
+    'label' => '600x900',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 600,
+          'height' => 900,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function feeds_article_node_info() {
