@@ -1,6 +1,16 @@
+body {
+  font-family: 'jaf-facitweb';
+  background-color: #fffaff;
+  color: #2b3;
+  margin: 0 0 0 20px;
+  overflow-x: hidden;
+}
+
+
 a#logo {
   float: left;
 }
+
 
 #header {
   height: initial;
@@ -8,15 +18,93 @@ a#logo {
 
 
 #main-wrapper {
-  padding: 12px 54px 18px;
+  padding: 12px 58px 18px 18px;
+  margin: 0 -20px;
   background-color: initial;
   color: black;
 }
 
 
+body.front div.view-top-5-articles div.views-row {
+  float: left;
+  padding: 0 10px 10px 0;
+}
+
+
+body.front article {
+}
+
+
+body.front div.view-top-5-articles div.node-article,
+body.front div.view-top-5-articles div.node-article img {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+body.front div.view-top-5-articles.view-display-id-page_1 div.views-row-1 div.node-article,
+body.front div.view-top-5-articles.view-display-id-page_1 div.views-row-1 div.node-article img {
+  width: 610px;
+  height: 610px;
+}
+
+
+body.front div.node-article div.group-text-front-page-text {
+  position: absolute;
+  bottom: 0px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  max-height: 300px;
+  width: calc(100% - 16px);
+  background-color: rgba(30, 55, 35, 0.6);
+  border-radius: 11px 11px 0 0;
+  padding: 0px 8px 11px 8px;
+}
+
+
+body.front div.view-top-5-articles.view-display-id-page_1 div.views-row-1 div.node-article div.group-text-front-page-text {
+  border-radius: 15px 15px 0 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'myriad-pro-condensed';
+  font-weight: normal;
+}
+
+
 h1 {
+  font-size: 1.6em;
+  line-height: 1.1em;
+}
+
+
+body.front div.view-top-5-articles.view-display-id-page_1 div.views-row-1 div.node-article div.group-text-front-page-text h1 {
   font-size: 2.8em;
-  line-height: 1.2em;
+}
+
+
+body.front div.node-article div.group-text-front-page-text
+div.field-name-field-section {
+  text-transform: uppercase;
+  font-family: nimbus-sans-extended;
+  font-weight: bold;
+  border-bottom: 1px dotted green;
+  padding-bottom: 1px;
+  margin-bottom: 5px;
+}
+
+
+body.front div.view-top-5-articles.view-display-id-page_1 div.views-row-1 div.node-article div.group-text-front-page-text div.field-name-body {
+  display: block;
+}
+
+
+body.front div.node-article div.group-text-front-page-text div.field-name-body {
+  display: none;
 }
 
 
@@ -25,8 +113,10 @@ h1 {
 }
 
 ul.nice-menu-main-menu {
-  width: calc(100% + 92px);
+  width: calc(100% + 51px);
   margin: 12px -41px 0;
+  font-family: nimbus-sans-extended;
+  font-weight: bold;
 }
 
 ul.nice-menu-main-menu li {

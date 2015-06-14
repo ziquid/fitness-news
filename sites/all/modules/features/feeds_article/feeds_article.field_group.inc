@@ -76,5 +76,43 @@ function feeds_article_field_group_info() {
   );
   $export['group_imported_data|node|article|form'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_text_front_page_text|node|article|front_page';
+  $field_group->group_name = 'group_text_front_page_text';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'article';
+  $field_group->mode = 'front_page';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Text',
+    'weight' => '1',
+    'children' => array(
+      0 => 'body',
+      1 => 'field_deck',
+      2 => 'field_section',
+      3 => 'title',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Text',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-text-front-page-text field-group-div',
+        'description' => '',
+        'show_label' => '0',
+        'label_element' => 'h3',
+        'effect' => 'none',
+        'speed' => 'none',
+        'element' => 'div',
+        'attributes' => '',
+        'required_fields' => 1,
+      ),
+      'formatter' => 'collapsible',
+    ),
+  );
+  $export['group_text_front_page_text|node|article|front_page'] = $field_group;
+
   return $export;
 }

@@ -43,6 +43,9 @@ projects[diff][version] = "3.2"
 projects[draggableviews][subdir] = "contrib"
 projects[draggableviews][version] = "2.1"
 
+projects[ds][subdir] = "contrib"
+projects[ds][version] = "2.10"
+
 projects[entity][subdir] = "contrib"
 projects[entity][version] = "1.6"
 

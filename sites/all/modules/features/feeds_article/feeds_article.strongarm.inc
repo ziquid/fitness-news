@@ -129,6 +129,12 @@ function feeds_article_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'front_page' => array(
+        'custom_settings' => TRUE,
+      ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

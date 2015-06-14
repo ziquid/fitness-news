@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function feeds_article_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "ds" && $api == "ds") {
+    return array("version" => "1");
+  }
   if ($module == "feeds" && $api == "feeds_importer_default") {
     return array("version" => "1");
   }
@@ -34,6 +37,21 @@ function feeds_article_views_api($module = NULL, $api = NULL) {
  */
 function feeds_article_image_default_styles() {
   $styles = array();
+
+  // Exported image style: 600x600.
+  $styles['600x600'] = array(
+    'label' => '600x600',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 600,
+          'height' => 600,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
 
   // Exported image style: 600x900.
   $styles['600x900'] = array(
