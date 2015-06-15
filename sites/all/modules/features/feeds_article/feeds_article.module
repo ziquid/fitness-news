@@ -31,6 +31,27 @@ function feeds_article_node_presave($node) {
 
 function feeds_article_score($node) {
 
+// not an imported article?  just decrement score and return
+  if (!isset($node->field_imported_description[LANGUAGE_NONE][0]['value']) &&
+    (trim($node->body[LANGUAGE_NONE][0]['value']) != '')) {
+
+    $relevance_decay = (int) ((time() - $node->created) / 3600);
+    $score = 100 - $relevance_decay;
+
+    $node->field_score = array(
+      LANGUAGE_NONE => array(
+        0 => array(
+          'value' => $score,
+        ),
+      ),
+    );
+// drupal_set_message(t('Score for %title is now %score',
+//   array('%title' => $node->title, '%score' => $score)));
+
+    return;
+
+  }
+
 // check relevance
 
   $allowed_tags = explode(' ',
@@ -47,6 +68,8 @@ function feeds_article_score($node) {
       'cute' => 3,
       'cuteness' => 3,
       'dermatologist' => 3,
+      'exfoliate' => 3,
+      'gorgeous' => 3,
       'hair' => 3,
       'hairspray' => 3,
       'lips' => 3,
@@ -79,6 +102,7 @@ function feeds_article_score($node) {
       'hospital' => 3,
       'hospitals' => 3,
       'mealtime' => 3,
+      'nutrients' => 3,
       'nutrition' => 3,
       'oxygen' => 2,
       'pregnant' => 3,
@@ -173,7 +197,7 @@ function feeds_article_score($node) {
       'friend' => 3,
       'friends' => 3,
       'girlfriend' => 3,
-      'love' => 3,
+      'love' => 2,
       'loved' => 3,
       'loves' => 3,
       'marry' => 3,
@@ -251,7 +275,7 @@ function feeds_article_score($node) {
 
       if ($num_matches > 0) {
 
-        $extra_weight = $num_matches * $weight * 3;
+        $extra_weight = min(25, $num_matches * $weight * 3);
         $scores[$section] += $extra_weight;
         $log_terms .= $extra_weight . ': ' . $term . ' (title)';
 
@@ -269,7 +293,7 @@ function feeds_article_score($node) {
 
       if ($num_matches > 0) {
 
-        $extra_weight = $num_matches * $weight;
+        $extra_weight = min(25, $num_matches * $weight);
         $scores[$section] += $extra_weight;
         $log_terms .= $extra_weight . ': ' . $term;
 
