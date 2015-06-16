@@ -6,6 +6,13 @@ body {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 540px) {
+  body {
+    margin: 0;
+    padidng-left: 20px;
+  }
+}
+
 
 a#logo {
   float: left;
@@ -94,10 +101,17 @@ h1 {
 }
 
 
-body.front div.view-top-5-articles.view-display-id-page_1 div.views-row-1 div.node-article div.group-text-front-page-text h1 {
+body.front div.view-top-5-articles.view-display-id-page_1 div.views-row-1
+  div.node-article div.group-text-front-page-text h1 {
   font-size: 2.8em;
 }
 
+@media screen and (max-width: 400px) {
+  body.front div.view-top-5-articles.view-display-id-page_1 div.views-row-1
+    div.node-article div.group-text-front-page-text h1 {
+    font-size: 1.6em;
+  }
+}
 
 body.front div.node-article div.group-text-front-page-text
 div.field-name-field-section {
@@ -133,7 +147,7 @@ ul.nice-menu-main-menu {
 
 @media screen and (max-width: 400px) {
   ul.nice-menu-main-menu {
-    font-size: 0.6em;
+    font-size: 0.56em;
   }
 }
 
