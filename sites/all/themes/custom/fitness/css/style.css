@@ -113,8 +113,8 @@ body.front div.node-article div.group-text-front-page-text div.field-name-body {
 }
 
 ul.nice-menu-main-menu {
-  width: calc(100% + 51px);
-  margin: 12px -41px 0;
+  width: calc(102% + 16px);
+  margin: 12px -20px 0;
   font-family: nimbus-sans-extended;
   font-weight: bold;
 }
