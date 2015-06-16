@@ -1,7 +1,7 @@
 body {
   font-family: 'jaf-facitweb';
   background-color: #fffaff;
-  color: #2b3;
+  color: #3d5;
   margin: 0 0 0 20px;
   overflow-x: hidden;
 }
@@ -21,7 +21,7 @@ a#logo {
   padding: 12px 58px 18px 18px;
   margin: 0 -20px;
   background-color: initial;
-  color: black;
+  color: lightgrey;
 }
 
 
