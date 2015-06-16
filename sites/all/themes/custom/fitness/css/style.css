@@ -120,7 +120,7 @@ ul.nice-menu-main-menu {
 }
 
 ul.nice-menu-main-menu li {
-  width: 24.75%;
+  width: 19.75%;
   border: none;
   background-color: initial;
   text-transform: uppercase;
@@ -142,6 +142,10 @@ ul.nice-menu-main-menu li.menu-path-taxonomy-term-3 {
 
 ul.nice-menu-main-menu li.menu-path-taxonomy-term-4 {
   background-color: #d13;
+}
+
+ul.nice-menu-main-menu li.menu-path-taxonomy-term-5 {
+  background-color: #d39;
 }
 
 ul.nice-menu-main-menu li a,
