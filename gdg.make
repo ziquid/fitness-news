@@ -59,7 +59,7 @@ projects[features][subdir] = "contrib"
 projects[features][version] = "2.5"
 
 projects[feeds][subdir] = "contrib"
-projects[feeds][version] = "2.0-alpha8"
+projects[feeds][version] = "2.0-alpha9"
 
 projects[feeds_tamper][subdir] = "contrib"
 projects[feeds_tamper][version] = "1.1"
