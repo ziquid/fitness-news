@@ -1,7 +1,6 @@
 name = Fitness
-description = Fitness Theme, based on GDG
+description = Fitness Theme
 core = 7.x
-base theme = gdg
 
 stylesheets[all][] = css/style.css
 
