@@ -3,7 +3,7 @@ core = 7.x
 api = 2
 
 ; Core
-projects[drupal][version] = "7.37"
+projects[drupal][version] = "7.38"
 projects[drupal][type] = "core"
 
 ; Modules
@@ -149,7 +149,7 @@ projects[typogrify][subdir] = "contrib"
 projects[typogrify][version] = "1.0-rc10"
 
 projects[video_embed_field][subdir] = "contrib"
-projects[video_embed_field][version] = "2.0-beta9"
+projects[video_embed_field][version] = "2.0-beta10"
 
 projects[views][subdir] = "contrib"
 projects[views][version] = "3.11"
