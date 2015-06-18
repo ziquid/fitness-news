@@ -1,9 +1,22 @@
 body {
   font-family: 'jaf-facitweb';
   background-color: #fffaff;
-  color: #2b3;
-  margin: 0 40px;
+  color: #3d5;
+  margin: 0;
   overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'myriad-pro-condensed';
+  font-weight: normal;
+}
+
+
+h1 {
+  font-size: 1.6em;
+  line-height: 1.1em;
+  margin: 0.5em 0;
 }
 
 
@@ -55,26 +68,8 @@ a#logo {
 }
 
 
-#header {
-  height: 123px;
-}
-
 .breadcrumb {
   height: 33px;
-}
-
-
-body {
-  font-family: 'jaf-facitweb';
-  background-color: #fffaff;
-  color: #3d5;
-  margin: 0;
-  overflow-x: hidden;
-}
-
-
-#header {
-  height: initial;
 }
 
 
@@ -134,18 +129,6 @@ body.front div.view-top-5-articles.view-display-id-page_1 div.views-row-1 div.no
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'myriad-pro-condensed';
-  font-weight: normal;
-}
-
-
-h1 {
-  font-size: 1.6em;
-  line-height: 1.1em;
-}
-
-
 body.front div.node-article div.group-text-front-page-text
 div.field-name-field-section {
   text-transform: uppercase;
@@ -154,6 +137,12 @@ div.field-name-field-section {
   border-bottom: 1px dotted green;
   padding-bottom: 1px;
   margin-bottom: 5px;
+}
+
+
+body.front div.node-article div.group-text-front-page-text
+div.field-name-title h1 {
+  margin-bottom: 0;
 }
 
 
