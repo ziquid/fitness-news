@@ -60,7 +60,7 @@ a, a:active, a:focus, a:hover, a:visited {
 
 a#logo {
   float: left;
-  margin: 20px 0 0 20px;
+  margin: 12px 0 5px 20px;
 }
 
 .node-unpublished {
@@ -69,7 +69,7 @@ a#logo {
 
 
 .breadcrumb {
-  height: 33px;
+  display: none;
 }
 
 
@@ -274,4 +274,12 @@ ul.tabs.primary li {
 
 div.codeblock, tr.odd, tr.even {
   background-color: #6b6a69 !important;
+}
+
+
+body.page-node.node-type-article #main {
+  background-color: rgba( 60, 80, 70, 0.6);
+  border-radius: 56px;
+  margin: 22px 10px 0 0;
+  padding: 0 14px 10px 20px;
 }
