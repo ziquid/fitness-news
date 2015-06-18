@@ -38,6 +38,22 @@ function feeds_article_views_api($module = NULL, $api = NULL) {
 function feeds_article_image_default_styles() {
   $styles = array();
 
+  // Exported image style: 1200px_wide.
+  $styles['1200px_wide'] = array(
+    'label' => '1200px wide',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 1200,
+          'height' => '',
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: 600x600.
   $styles['600x600'] = array(
     'label' => '600x600',
