@@ -403,7 +403,7 @@ function feeds_article_score($node) {
 
 // save title
 
-  $node->title = filter_xss($node->title, array());
+  $node->title = filter_xss(decode_entities($node->title), array());
 
 // delete log
 
@@ -416,8 +416,10 @@ function feeds_article_score($node) {
       LANGUAGE_NONE => array(
         0 => array(
           'value' => filter_xss(
-             @$node->field_imported_description[LANGUAGE_NONE][0]['value'],
-             $allowed_tags),
+            decode_entities(
+              @$node->field_imported_description[LANGUAGE_NONE][0]['value']
+            ),
+            $allowed_tags),
           'format' => 'limited_html',
         ),
       ),
