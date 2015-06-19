@@ -23,6 +23,7 @@ h1 {
 p {
   margin: 1em 0 0;
   font-size: 0.85em;
+  line-height: 1.2em;
 }
 
 .field-name-field-dek {
@@ -284,14 +285,14 @@ div.codeblock, tr.odd, tr.even {
 
 
 body.page-node.node-type-article #main {
-  background-color: rgba( 60, 80, 70, 0.6);
+  background-color: rgba( 50, 65, 55, 0.67);
   border-radius: 56px;
   margin: 22px 10px 0 0;
   padding: 0 14px 10px 20px;
 }
 
 
-body.page-node.node-type-article #main h1.title {
+h1.title {
   text-align: center;
   color: #2b3;
   font-weight: bold;
