@@ -183,7 +183,7 @@ function feeds_article_score($node) {
 
     ),
 
-    'Sex and Relationships' => array(
+    'Sex & Love' => array(
       'sex' => 3,
       'bondage' => 2,
       'boob' => 2,
@@ -197,6 +197,10 @@ function feeds_article_score($node) {
       'friend' => 3,
       'friends' => 3,
       'girlfriend' => 3,
+      'husband' => 3,
+      'kiss' => 3,
+      'kissed' => 3,
+      'kissing' => 3,
       'love' => 2,
       'loved' => 3,
       'loves' => 3,
