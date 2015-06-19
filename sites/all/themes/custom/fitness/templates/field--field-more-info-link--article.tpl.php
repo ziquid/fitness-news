@@ -52,7 +52,7 @@
     <?php foreach ($items as $delta => $item): ?>
       <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>>
         <a href="<?php print render($item); ?>" target="_blank">
-          Full Article Here
+          Read the full article here
         </a>
       </div>
     <?php endforeach; ?>

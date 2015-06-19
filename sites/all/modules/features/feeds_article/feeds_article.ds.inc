@@ -17,10 +17,20 @@ function feeds_article_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'article';
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
+    'comments' => array(
+      'weight' => '5',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'author' => array(
-      'weight' => '4',
+      'weight' => '2',
       'label' => 'hidden',
       'format' => 'author',
+    ),
+    'post_date' => array(
+      'weight' => '3',
+      'label' => 'hidden',
+      'format' => 'ds_post_date_long',
     ),
   );
   $export['node|article|default'] = $ds_fieldsetting;
@@ -84,19 +94,21 @@ function feeds_article_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_section',
-        1 => 'field_deck',
-        2 => 'body',
-        3 => 'author',
+        0 => 'field_deck',
+        1 => 'body',
+        2 => 'author',
+        3 => 'post_date',
         4 => 'field_more_info_link',
+        5 => 'comments',
       ),
     ),
     'fields' => array(
-      'field_section' => 'ds_content',
       'field_deck' => 'ds_content',
       'body' => 'ds_content',
       'author' => 'ds_content',
+      'post_date' => 'ds_content',
       'field_more_info_link' => 'ds_content',
+      'comments' => 'ds_content',
     ),
     'classes' => array(),
     'wrappers' => array(

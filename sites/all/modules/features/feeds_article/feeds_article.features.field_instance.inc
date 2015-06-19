@@ -24,7 +24,7 @@ function feeds_article_field_default_field_instances() {
           'trim_length' => 1000,
         ),
         'type' => 'text_summary_or_trimmed',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'front_page' => array(
         'label' => 'hidden',
@@ -104,7 +104,7 @@ function feeds_article_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'front_page' => array(
         'label' => 'hidden',
@@ -301,7 +301,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 6,
+        'weight' => 13,
       ),
       'front_page' => array(
         'label' => 'hidden',
@@ -1063,11 +1063,11 @@ function feeds_article_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -1221,7 +1221,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 15,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -1265,7 +1265,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 8,
+        'weight' => 14,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -1309,10 +1309,9 @@ function feeds_article_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 1,
+        'type' => 'hidden',
+        'weight' => 12,
       ),
       'front_page' => array(
         'label' => 'hidden',

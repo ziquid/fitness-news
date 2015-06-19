@@ -22,6 +22,7 @@ h1 {
 
 p {
   margin: 1em 0 0;
+  font-size: 0.85em;
 }
 
 .field-name-field-dek {
@@ -287,4 +288,23 @@ body.page-node.node-type-article #main {
   border-radius: 56px;
   margin: 22px 10px 0 0;
   padding: 0 14px 10px 20px;
+}
+
+
+body.page-node.node-type-article #main h1.title {
+  text-align: center;
+  color: #2b3;
+  font-weight: bold;
+}
+
+
+body.page-node.node-type-article #main p {
+  text-align: center;
+}
+
+
+body.page-node.node-type-article #main div.field-name-field-more-info-link {
+  text-align: center;
+  font-weight: bold;
+  margin: 10px 0 4px 0;
 }

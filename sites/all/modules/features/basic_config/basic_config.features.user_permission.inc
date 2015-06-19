@@ -67,6 +67,7 @@ function basic_config_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Editor' => 'Editor',
+      'anonymous user' => 'anonymous user',
     ),
     'module' => 'comment',
   );
