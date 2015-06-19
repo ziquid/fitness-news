@@ -109,6 +109,9 @@ projects[master][version] = "2.0-beta4"
 projects[media][subdir] = "contrib"
 projects[media][version] = "2.x-dev"
 
+projects[menu_trail_by_path][subdir] = "contrib"
+projects[menu_trail_by_path][version] = "2.0"
+
 projects[metatag][subdir] = "contrib"
 projects[metatag][version] = "1.5"
 

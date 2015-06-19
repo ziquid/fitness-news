@@ -446,7 +446,27 @@ function feeds_article_rescore() {
 
   if (isset($result['node'])) {
     $nids = array_keys($result['node']);
-    $articles = entity_load('node', $nids);
+    $articles1 = entity_load('node', $nids);
+  }
+
+  $query = new EntityFieldQuery();
+
+  $query->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'article')
+    ->fieldCondition('field_score', 'value', 0, '>')
+    ->addMetaData('account', user_load(1)); // Run the query as user 1.
+
+  $result = $query->execute();
+
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    $articles2 = entity_load('node', $nids);
+  }
+
+  $articles = $articles1 + $articles2;
+// @FIXME: write a proper query with an OR condition
+
+  if (count($articles) > 0) {
 
     drupal_set_message(
       t('%num nodes are still alive.', array('%num' => count($nids)))

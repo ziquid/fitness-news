@@ -13,7 +13,7 @@ function section_taxonomy_taxonomy_default_vocabularies() {
       'name' => 'Sections',
       'machine_name' => 'sections',
       'description' => 'Sections, the highest-ranking category on your site',
-      'hierarchy' => 1,
+      'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
       'rdf_mapping' => array(

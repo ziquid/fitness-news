@@ -176,6 +176,11 @@ ul.nice-menu-main-menu li {
   text-transform: uppercase;
   text-align: center;
   padding: 3px 0 4px;
+  border-bottom: 2px solid black;
+}
+
+ul.nice-menu-main-menu li.active-trail {
+  border-bottom: 2px solid #2b3;
 }
 
 ul.nice-menu-main-menu li.menu-path-taxonomy-term-1 {
