@@ -60,6 +60,7 @@ projects[features][version] = "2.5"
 
 projects[feeds][subdir] = "contrib"
 projects[feeds][version] = "2.0-alpha9"
+projects[feeds][patch][] = "./patches/feeds_see_simplepie_1.3.1.patch"
 
 projects[feeds_tamper][subdir] = "contrib"
 projects[feeds_tamper][version] = "1.1"
@@ -182,3 +183,6 @@ libraries[geshi][download][url] = ""
 libraries[geshi][directory_name] = "geshi"
 libraries[geshi][type] = "library"
 
+libraries[simplepie][download][type] = "get"
+libraries[simplepie][download][url] = "http://simplepie.org/downloads/simplepie_1.3.1.compiled.php"
+libraries[simplepie][destination] = libraries

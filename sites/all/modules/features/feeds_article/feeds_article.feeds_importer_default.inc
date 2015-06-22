@@ -27,7 +27,7 @@ function feeds_article_feeds_importer_default() {
       ),
     ),
     'parser' => array(
-      'plugin_key' => 'FeedsSyndicationParser',
+      'plugin_key' => 'FeedsSimplePieParser',
       'config' => array(),
     ),
     'processor' => array(
@@ -105,6 +105,11 @@ function feeds_article_feeds_importer_default() {
           13 => array(
             'source' => 'title',
             'target' => 'field_imported_title',
+            'unique' => FALSE,
+          ),
+          14 => array(
+            'source' => 'feeds_article_feed_source',
+            'target' => 'field_imported_source',
             'unique' => FALSE,
           ),
         ),

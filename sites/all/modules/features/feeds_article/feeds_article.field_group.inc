@@ -82,7 +82,7 @@ function feeds_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Imported Data',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_imported_author',
       1 => 'field_imported_categories',
@@ -94,6 +94,7 @@ function feeds_article_field_group_info() {
       7 => 'field_imported_title',
       8 => 'field_imported_url',
       9 => 'field_imported_user_id',
+      10 => 'field_imported_source',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(

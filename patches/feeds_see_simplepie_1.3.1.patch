@@ -1,0 +1,23 @@
+diff -NaurBbw feeds/feeds.module feeds_old/feeds.module
+--- feeds.module	2015-06-16 23:29:43.000000000 -0400
++++ feeds.module	2015-06-22 14:19:52.000000000 -0400
+@@ -1039,7 +1039,8 @@
+  * Checks whether simplepie exists.
+  */
+ function feeds_simplepie_exists() {
+-  return (feeds_library_exists('simplepie.compiled.php', 'simplepie') ||
++  return (feeds_library_exists('simplepie_1.3.1.compiled.php', 'simplepie') ||
++    feeds_library_exists('simplepie.compiled.php', 'simplepie') ||
+     feeds_library_exists('simplepie.mini.php', 'simplepie') ||
+     feeds_library_exists('simplepie.inc', 'simplepie')
+   );
+@@ -1049,7 +1050,8 @@
+  * Includes the simplepie library.
+  */
+ function feeds_include_simplepie() {
+-  $files = array('simplepie.mini.php', 'simplepie.compiled.php', 'simplepie.inc');
++  $files = array('simplepie.mini.php', 'simplepie.compiled.php',
++    'simplepie_1.3.1.compiled.php', 'simplepie.inc');
+
+   foreach ($files as $file) {
+     if (feeds_include_library($file, 'simplepie')) {

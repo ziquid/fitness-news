@@ -95,6 +95,8 @@ function feeds_article_score($node) {
       'diet' => 3,
       'diarrhea' => 3,
       'disease' => 3,
+      'doctor' => 2,
+      'doctors' => 2,
       'energy' => 3,
       'garden' => 3,
       'health' => 3,
@@ -129,6 +131,7 @@ function feeds_article_score($node) {
       '5k' => 3,
       'active' => 2,
       'athlete' => 2,
+      'athletes' => 2,
       'barbell' => 3,
       'barbells' => 3,
       'class' => 1,
@@ -241,18 +244,12 @@ function feeds_article_score($node) {
 
   );
 
-  $text_only = filter_xss(
-    decode_entities(
-      @$node->field_imported_description[LANGUAGE_NONE][0]['value']
-    ),
-    array()
+  $text_only = strip_tags(
+    @$node->field_imported_description[LANGUAGE_NONE][0]['value'], ''
   );
 
-  $title_text_only = filter_xss(
-    decode_entities(
-      $node->field_imported_title[LANGUAGE_NONE][0]['value']
-    ),
-    array()
+  $title_text_only = strip_tags(
+    $node->field_imported_title[LANGUAGE_NONE][0]['value'], ''
   );
 
 // generate score for each section based on term ranking
@@ -400,15 +397,11 @@ function feeds_article_score($node) {
 
   $node->field_more_info_link = $node->field_imported_url;
 
-
 // save title
 
-  $node->title = filter_xss(
-      decode_entities(
-        $node->field_imported_title[LANGUAGE_NONE][0]['value']
-      ),
-      array()
-    );
+  $node->title = strip_tags(
+    $node->field_imported_title[LANGUAGE_NONE][0]['value'], ''
+  );
 
 // delete log
 
@@ -508,5 +501,52 @@ function feeds_article_rescore_wrapper() {
   feeds_article_rescore();
   drupal_set_message('Article rescore completed.');
   return 'Article rescore completed.';
+
+}
+
+
+/**
+ * Alter mapping sources.
+ *
+ * Use this hook to add additional mapping sources for any parser. Allows for
+ * registering a callback to be invoked at mapping time.
+ *
+ * @see my_source_get_source().
+ * @see locale_feeds_parser_sources_alter().
+ */
+function feeds_article_feeds_parser_sources_alter(&$sources, $content_type) {
+
+  $sources['feeds_article_feed_source'] = array(
+    'name' => t('Feed source title'),
+    'description' => t('Title of the feed from which this element came.'),
+    'callback' => 'feeds_article_get_feeds_source',
+  );
+
+}
+
+
+/**
+ * Example callback specified in hook_feeds_parser_sources_alter().
+ *
+ * To be invoked on mapping time.
+ *
+ * @param $source
+ *   The FeedsSource object being imported.
+ * @param $result
+ *   The FeedsParserResult object being mapped from.
+ * @param $key
+ *   The key specified in the $sources array in
+ *   hook_feeds_parser_sources_alter().
+ *
+ * @return
+ *   The value to be extracted from the source.
+ *
+ * @see hook_feeds_parser_sources_alter()
+ * @see locale_feeds_get_source()
+ */
+function feeds_article_get_feeds_source(FeedsSource $source,
+  FeedsParserResult $result, $key) {
+
+  return strip_tags($result->title, '');
 
 }
