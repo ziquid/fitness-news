@@ -366,8 +366,8 @@ function feeds_article_score($node) {
   $relevance_decay = (int) ((time() - $node->field_imported_published_date
     [LANGUAGE_NONE][0]['value']) / 3600);
 
-  $relevance_decay = (int) ((time() - $node->changed) / 3600);
-  $score = $relevance - $relevance_decay;
+//   $relevance_decay = (int) ((time() - $node->changed) / 3600);
+//   $score = $relevance - $relevance_decay;
 
   $node->field_score = array(
     LANGUAGE_NONE => array(
