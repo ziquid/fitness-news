@@ -18,7 +18,7 @@ function feeds_article_ds_field_settings_info() {
   $ds_fieldsetting->view_mode = 'default';
   $ds_fieldsetting->settings = array(
     'comments' => array(
-      'weight' => '6',
+      'weight' => '5',
       'label' => 'hidden',
       'format' => 'default',
     ),
@@ -90,19 +90,21 @@ function feeds_article_ds_layout_settings_info() {
     'regions' => array(
       'ds_content' => array(
         0 => 'group_byline',
-        1 => 'field_deck',
-        2 => 'body',
+        1 => 'field_imported_source_link',
+        2 => 'field_deck',
         3 => 'field_imported_author',
-        4 => 'post_date',
-        5 => 'field_more_info_link',
-        6 => 'comments',
+        4 => 'body',
+        5 => 'post_date',
+        6 => 'field_more_info_link',
+        7 => 'comments',
       ),
     ),
     'fields' => array(
       'group_byline' => 'ds_content',
+      'field_imported_source_link' => 'ds_content',
       'field_deck' => 'ds_content',
-      'body' => 'ds_content',
       'field_imported_author' => 'ds_content',
+      'body' => 'ds_content',
       'post_date' => 'ds_content',
       'field_more_info_link' => 'ds_content',
       'comments' => 'ds_content',

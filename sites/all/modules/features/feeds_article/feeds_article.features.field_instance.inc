@@ -24,7 +24,7 @@ function feeds_article_field_default_field_instances() {
           'trim_length' => 1000,
         ),
         'type' => 'text_summary_or_trimmed',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'front_page' => array(
         'label' => 'hidden',
@@ -104,7 +104,7 @@ function feeds_article_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'front_page' => array(
         'label' => 'hidden',
@@ -181,7 +181,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 29,
+        'weight' => 28,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -227,7 +227,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 24,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -301,7 +301,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 14,
       ),
       'front_page' => array(
         'label' => 'hidden',
@@ -428,7 +428,7 @@ function feeds_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 21,
+      'weight' => 22,
     ),
   );
 
@@ -443,7 +443,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 25,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -499,7 +499,7 @@ function feeds_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 22,
+      'weight' => 23,
     ),
   );
 
@@ -514,7 +514,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 26,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -574,7 +574,7 @@ function feeds_article_field_default_field_instances() {
         'rows' => 15,
       ),
       'type' => 'text_textarea',
-      'weight' => 20,
+      'weight' => 21,
     ),
   );
 
@@ -589,7 +589,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 28,
+        'weight' => 27,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -645,7 +645,7 @@ function feeds_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 25,
+      'weight' => 26,
     ),
   );
 
@@ -660,7 +660,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 23,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -716,7 +716,7 @@ function feeds_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 26,
+      'weight' => 27,
     ),
   );
 
@@ -731,7 +731,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 22,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -787,7 +787,7 @@ function feeds_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 23,
+      'weight' => 24,
     ),
   );
 
@@ -801,7 +801,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 18,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -839,23 +839,23 @@ function feeds_article_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 19,
+      'weight' => 20,
     ),
   );
 
-  // Exported field_instance: 'node-article-field_imported_source'
-  $field_instances['node-article-field_imported_source'] = array(
+  // Exported field_instance: 'node-article-field_imported_source_link'
+  $field_instances['node-article-field_imported_source_link'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'text',
+        'label' => 'hidden',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 30,
+        'type' => 'link_default',
+        'weight' => 1,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -871,51 +871,38 @@ function feeds_article_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_imported_source',
-    'label' => 'Imported Source',
+    'field_name' => 'field_imported_source_link',
+    'label' => 'Imported Source Link',
     'required' => 0,
     'settings' => array(
-      'better_formats' => array(
-        'allowed_formats' => array(
-          'deck_html' => 'deck_html',
-          'full_html' => 'full_html',
-          'limited_html' => 'limited_html',
-          'php_code' => 'php_code',
-          'plain_text' => 'plain_text',
-        ),
-        'allowed_formats_toggle' => 0,
-        'default_order_toggle' => 0,
-        'default_order_wrapper' => array(
-          'formats' => array(
-            'deck_html' => array(
-              'weight' => 0,
-            ),
-            'full_html' => array(
-              'weight' => 0,
-            ),
-            'limited_html' => array(
-              'weight' => 0,
-            ),
-            'php_code' => array(
-              'weight' => 11,
-            ),
-            'plain_text' => array(
-              'weight' => 10,
-            ),
-          ),
-        ),
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => '_blank',
+        'title' => '',
       ),
-      'text_processing' => 0,
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 0,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
       'user_register_form' => FALSE,
+      'validate_url' => 1,
     ),
     'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 18,
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 19,
     ),
   );
 
@@ -930,7 +917,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 18,
+        'weight' => 17,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -1001,7 +988,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 19,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -1072,7 +1059,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 20,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -1128,7 +1115,7 @@ function feeds_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 24,
+      'weight' => 25,
     ),
   );
 
@@ -1144,7 +1131,7 @@ function feeds_article_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -1219,7 +1206,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 21,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -1298,7 +1285,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 17,
+        'weight' => 16,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -1342,7 +1329,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 16,
+        'weight' => 15,
       ),
       'front_page' => array(
         'label' => 'above',
@@ -1388,7 +1375,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 14,
+        'weight' => 13,
       ),
       'front_page' => array(
         'label' => 'hidden',
@@ -1436,7 +1423,7 @@ function feeds_article_field_default_field_instances() {
   t('Imported GUID');
   t('Imported Node ID');
   t('Imported Published Date');
-  t('Imported Source');
+  t('Imported Source Link');
   t('Imported Title');
   t('Imported URL');
   t('Imported User ID');

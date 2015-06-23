@@ -365,6 +365,8 @@ function feeds_article_score($node) {
 
   $relevance_decay = (int) ((time() - $node->field_imported_published_date
     [LANGUAGE_NONE][0]['value']) / 3600);
+
+  $relevance_decay = (int) ((time() - $node->changed) / 3600);
   $score = $relevance - $relevance_decay;
 
   $node->field_score = array(
@@ -522,6 +524,12 @@ function feeds_article_feeds_parser_sources_alter(&$sources, $content_type) {
     'callback' => 'feeds_article_get_feeds_source',
   );
 
+  $sources['feeds_article_feed_source_link'] = array(
+    'name' => t('Feed source link'),
+    'description' => t('Link to the feed from which this element came.'),
+    'callback' => 'feeds_article_get_feeds_source_link',
+  );
+
 }
 
 
@@ -548,5 +556,32 @@ function feeds_article_get_feeds_source(FeedsSource $source,
   FeedsParserResult $result, $key) {
 
   return strip_tags($result->title, '');
+
+}
+
+
+/**
+ * Example callback specified in hook_feeds_parser_sources_alter().
+ *
+ * To be invoked on mapping time.
+ *
+ * @param $source
+ *   The FeedsSource object being imported.
+ * @param $result
+ *   The FeedsParserResult object being mapped from.
+ * @param $key
+ *   The key specified in the $sources array in
+ *   hook_feeds_parser_sources_alter().
+ *
+ * @return
+ *   The value to be extracted from the source.
+ *
+ * @see hook_feeds_parser_sources_alter()
+ * @see locale_feeds_get_source()
+ */
+function feeds_article_get_feeds_source_link(FeedsSource $source,
+  FeedsParserResult $result, $key) {
+
+  return $result->link;
 
 }

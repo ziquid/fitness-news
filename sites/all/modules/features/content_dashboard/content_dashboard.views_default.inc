@@ -36,6 +36,7 @@ function content_dashboard_views_default_views() {
     'field_score' => 'field_score',
     'field_highest_relevance' => 'field_highest_relevance',
     'field_section' => 'field_section',
+    'field_imported_source_link' => 'field_imported_source_link',
   );
   $handler->display->display_options['style_options']['default'] = 'field_score';
   $handler->display->display_options['style_options']['info'] = array(
@@ -62,6 +63,13 @@ function content_dashboard_views_default_views() {
     ),
     'field_section' => array(
       'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_imported_source_link' => array(
+      'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
@@ -109,10 +117,9 @@ function content_dashboard_views_default_views() {
   $handler->display->display_options['filters']['field_section_tid']['field'] = 'field_section_tid';
   $handler->display->display_options['filters']['field_section_tid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_section_tid']['expose']['operator_id'] = 'field_section_tid_op';
-  $handler->display->display_options['filters']['field_section_tid']['expose']['label'] = 'Section (field_section)';
+  $handler->display->display_options['filters']['field_section_tid']['expose']['label'] = 'Section';
   $handler->display->display_options['filters']['field_section_tid']['expose']['operator'] = 'field_section_tid_op';
   $handler->display->display_options['filters']['field_section_tid']['expose']['identifier'] = 'field_section_tid';
-  $handler->display->display_options['filters']['field_section_tid']['expose']['remember'] = TRUE;
   $handler->display->display_options['filters']['field_section_tid']['expose']['multiple'] = TRUE;
   $handler->display->display_options['filters']['field_section_tid']['expose']['remember_roles'] = array(
     2 => '2',
@@ -135,6 +142,93 @@ function content_dashboard_views_default_views() {
 
   /* Display: Articles */
   $handler = $view->new_display('page', 'Articles', 'page');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Score */
+  $handler->display->display_options['fields']['field_score']['id'] = 'field_score';
+  $handler->display->display_options['fields']['field_score']['table'] = 'field_data_field_score';
+  $handler->display->display_options['fields']['field_score']['field'] = 'field_score';
+  $handler->display->display_options['fields']['field_score']['label'] = 'Score Now';
+  $handler->display->display_options['fields']['field_score']['settings'] = array(
+    'thousand_separator' => ',',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Highest Relevance */
+  $handler->display->display_options['fields']['field_highest_relevance']['id'] = 'field_highest_relevance';
+  $handler->display->display_options['fields']['field_highest_relevance']['table'] = 'field_data_field_highest_relevance';
+  $handler->display->display_options['fields']['field_highest_relevance']['field'] = 'field_highest_relevance';
+  $handler->display->display_options['fields']['field_highest_relevance']['label'] = 'Original Relevance';
+  $handler->display->display_options['fields']['field_highest_relevance']['settings'] = array(
+    'thousand_separator' => ' ',
+    'prefix_suffix' => 1,
+  );
+  /* Field: Content: Section */
+  $handler->display->display_options['fields']['field_section']['id'] = 'field_section';
+  $handler->display->display_options['fields']['field_section']['table'] = 'field_data_field_section';
+  $handler->display->display_options['fields']['field_section']['field'] = 'field_section';
+  $handler->display->display_options['fields']['field_section']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Content: Imported Source Link */
+  $handler->display->display_options['fields']['field_imported_source_link']['id'] = 'field_imported_source_link';
+  $handler->display->display_options['fields']['field_imported_source_link']['table'] = 'field_data_field_imported_source_link';
+  $handler->display->display_options['fields']['field_imported_source_link']['field'] = 'field_imported_source_link';
+  $handler->display->display_options['fields']['field_imported_source_link']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_imported_source_link']['type'] = 'link_title_plain';
+  $handler->display->display_options['fields']['field_imported_source_link']['settings'] = array(
+    'strip_www' => 1,
+  );
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Section (field_section) */
+  $handler->display->display_options['filters']['field_section_tid']['id'] = 'field_section_tid';
+  $handler->display->display_options['filters']['field_section_tid']['table'] = 'field_data_field_section';
+  $handler->display->display_options['filters']['field_section_tid']['field'] = 'field_section_tid';
+  $handler->display->display_options['filters']['field_section_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_section_tid']['expose']['operator_id'] = 'field_section_tid_op';
+  $handler->display->display_options['filters']['field_section_tid']['expose']['label'] = 'Section';
+  $handler->display->display_options['filters']['field_section_tid']['expose']['operator'] = 'field_section_tid_op';
+  $handler->display->display_options['filters']['field_section_tid']['expose']['identifier'] = 'field_section_tid';
+  $handler->display->display_options['filters']['field_section_tid']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_section_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    6 => 0,
+    7 => 0,
+    3 => 0,
+    5 => 0,
+  );
+  $handler->display->display_options['filters']['field_section_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_section_tid']['vocabulary'] = 'sections';
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'article' => 'article',
+  );
+  /* Filter criterion: Content: Imported Source Link (field_imported_source_link:title) */
+  $handler->display->display_options['filters']['field_imported_source_link_title']['id'] = 'field_imported_source_link_title';
+  $handler->display->display_options['filters']['field_imported_source_link_title']['table'] = 'field_data_field_imported_source_link';
+  $handler->display->display_options['filters']['field_imported_source_link_title']['field'] = 'field_imported_source_link_title';
+  $handler->display->display_options['filters']['field_imported_source_link_title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_imported_source_link_title']['expose']['operator_id'] = 'field_imported_source_link_title_op';
+  $handler->display->display_options['filters']['field_imported_source_link_title']['expose']['label'] = 'Imported Source';
+  $handler->display->display_options['filters']['field_imported_source_link_title']['expose']['operator'] = 'field_imported_source_link_title_op';
+  $handler->display->display_options['filters']['field_imported_source_link_title']['expose']['identifier'] = 'field_imported_source_link_title';
+  $handler->display->display_options['filters']['field_imported_source_link_title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    4 => 0,
+    6 => 0,
+    7 => 0,
+    3 => 0,
+    5 => 0,
+  );
   $handler->display->display_options['path'] = 'admin/content/dashboard/articles';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'Dashboard - Articles';

@@ -109,7 +109,12 @@ function feeds_article_feeds_importer_default() {
           ),
           14 => array(
             'source' => 'feeds_article_feed_source',
-            'target' => 'field_imported_source',
+            'target' => 'field_imported_source_link:title',
+            'unique' => FALSE,
+          ),
+          15 => array(
+            'source' => 'feeds_article_feed_source_link',
+            'target' => 'field_imported_source_link:url',
             'unique' => FALSE,
           ),
         ),
