@@ -322,3 +322,11 @@ body.page-node.node-type-article #main div.group-byline {
 body.page-node.node-type-article #main div.group-byline div.field {
   display: inline-block;
 }
+
+
+body.page-node.node-type-article #main div.field-name-field-imported-source-link
+{
+  text-align: center;
+  font-size: 0.5em;
+  color: #9aa;
+}
