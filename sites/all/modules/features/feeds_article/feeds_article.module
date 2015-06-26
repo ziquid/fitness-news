@@ -84,6 +84,7 @@ function feeds_article_score($node) {
       'damn' => -100,
       'f---' => -100,
       'f*ck' => -100,
+      'sh*t' => -100,
       'wtf' => -100,
 
     ),
@@ -123,6 +124,7 @@ function feeds_article_score($node) {
       'damn' => -100,
       'f---' => -100,
       'f*ck' => -100,
+      'sh*t' => -100,
       'wtf' => -100,
 
     ),
@@ -186,6 +188,7 @@ function feeds_article_score($node) {
       'damn' => -100,
       'f---' => -100,
       'f*ck' => -100,
+      'sh*t' => -100,
       'wtf' => -100,
 
     ),
@@ -238,6 +241,7 @@ function feeds_article_score($node) {
       'damn' => -100,
       'f---' => -100,
       'f*ck' => -100,
+      'sh*t' => -100,
       'wtf' => -100,
 
     ),
