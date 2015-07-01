@@ -128,6 +128,9 @@ projects[oauth][version] = "3.2"
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "1.2"
 
+projects[publication_date][subdir] = "contrib"
+projects[publication_date][version] = "2.2"
+
 projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc1"
 

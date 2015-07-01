@@ -369,10 +369,11 @@ function feeds_article_score($node) {
     ),
   );
 
-  $relevance_decay = (int) ((time() - $node->field_imported_published_date
-    [LANGUAGE_NONE][0]['value']) / 3600);
+//   $relevance_decay = (int) ((time() - $node->field_imported_published_date
+//     [LANGUAGE_NONE][0]['value']) / 3600);
 
-//   $relevance_decay = (int) ((time() - $node->changed) / 3600);
+  $relevance_decay = (int) ((time() - $node->published_at) / 3600);
+
   $score = $relevance - $relevance_decay;
 
   $node->field_score = array(
@@ -433,8 +434,8 @@ function feeds_article_score($node) {
 
 // publish or promote?
 
-  $node->status = ($score > 10) ? 1 : 0;
-  $node->promote = ($score > 20) ? 1 : 0;
+  $node->status = ($score > variable_get('score_to_publish', 1)) ? 1 : 0;
+  $node->promote = ($score > variable_get('score_to_promote', 2)) ? 1 : 0;
 
 //     dpm($node, $node->title);
 
@@ -450,12 +451,14 @@ function feeds_article_cron() {
 
 function feeds_article_rescore() {
 
+  $articles1 = $articles2 = array();
   $query = new EntityFieldQuery();
 
   $query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'article')
-    ->fieldCondition('field_imported_published_date', 'value', time() - 345600,
-      '>')
+//     ->fieldCondition('field_imported_published_date', 'value', time() - 345600,
+//       '>')
+    ->addTag('published_in_last_four_days')
     ->addMetaData('account', user_load(1)); // Run the query as user 1.
 
   $result = $query->execute();
@@ -479,21 +482,31 @@ function feeds_article_rescore() {
     $articles2 = entity_load('node', $nids);
   }
 
-  $articles = $articles1 + $articles2;
+  $articles = (array) $articles1 + (array) $articles2;
 // @FIXME: write a proper query with an OR condition
 
   if (count($articles) > 0) {
 
     drupal_set_message(
-      t('%num nodes are still alive.', array('%num' => count($nids)))
+      t('%num nodes are still alive.', array('%num' => count($articles)))
     );
+
+    $pub = $prom = $pos = 0;
 
     foreach ($articles as $node) {
 
       feeds_article_score($node);
+      $pub += $node->status;
+      $prom += $node->promote;
+      ($node->field_score[LANGUAGE_NONE][0]['value'] > 0) && $pos++;
       node_save($node);
 
     }
+
+    drupal_set_message(
+      t('%pub nodes published, %prom nodes promoted, %pos nodes score positive',
+        array('%pub' => $pub, '%prom' => $prom, '%pos' => $pos))
+    );
 
   } else {
 
@@ -589,5 +602,13 @@ function feeds_article_get_feeds_source_link(FeedsSource $source,
   FeedsParserResult $result, $key) {
 
   return $result->link;
+
+}
+
+
+function feeds_article_query_published_in_last_four_days_alter($query) {
+
+  $query->join('publication_date', 'pd', '%alias.nid = node.nid');
+  $query->condition('pd.published_at', time() - 345600000, '>');
 
 }

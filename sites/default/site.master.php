@@ -46,6 +46,7 @@ $conf['master_modules'] = array(
     'page_manager',
     'pathauto',
     'php',
+    'publication_date',
     'rdf',
     'redirect',
     'statistics',
