@@ -227,6 +227,8 @@ function feeds_article_score($node) {
       'porn' => 3,
       'porno' => 3,
       'pornography' => 3,
+      'pregnant' => 3,
+      'pregnancy' => 3,
       'relationship' => 3,
       'relationships' => 3,
       'sexual' => 3,
