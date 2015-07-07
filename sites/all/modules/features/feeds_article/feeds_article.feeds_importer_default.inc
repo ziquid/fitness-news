@@ -117,6 +117,11 @@ function feeds_article_feeds_importer_default() {
             'target' => 'field_imported_source_link:url',
             'unique' => FALSE,
           ),
+          16 => array(
+            'source' => 'feeds_article_current_time',
+            'target' => 'field_imported_date:start',
+            'unique' => FALSE,
+          ),
         ),
         'input_format' => 'limited_html',
         'author' => '7',

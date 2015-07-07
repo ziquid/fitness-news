@@ -369,10 +369,19 @@ function feeds_article_score($node) {
     ),
   );
 
-//   $relevance_decay = (int) ((time() - $node->field_imported_published_date
-//     [LANGUAGE_NONE][0]['value']) / 3600);
+  if (empty($node->field_imported_date))
+    $node->field_imported_date = array(
+      LANGUAGE_NONE => array(
+        0 => array(
+          'value' => time()
+        )
+      )
+    );
 
-  $relevance_decay = (int) ((time() - $node->published_at) / 3600);
+  $relevance_decay = (int) ((time() - $node->field_imported_date
+    [LANGUAGE_NONE][0]['value']) / 3600);
+
+//   $relevance_decay = (int) ((time() - $node->published_at) / 3600);
 
   $score = $relevance - $relevance_decay;
 
@@ -456,9 +465,8 @@ function feeds_article_rescore() {
 
   $query->entityCondition('entity_type', 'node')
     ->entityCondition('bundle', 'article')
-//     ->fieldCondition('field_imported_published_date', 'value', time() - 345600,
-//       '>')
-    ->addTag('published_in_last_four_days')
+    ->fieldCondition('field_imported_date', 'value', time() - 345600, '>')
+//    ->addTag('imported_in_last_four_days')
     ->addMetaData('account', user_load(1)); // Run the query as user 1.
 
   $result = $query->execute();
@@ -549,6 +557,12 @@ function feeds_article_feeds_parser_sources_alter(&$sources, $content_type) {
     'callback' => 'feeds_article_get_feeds_source_link',
   );
 
+  $sources['feeds_article_current_time'] = array(
+    'name' => t('Current Time'),
+    'description' => t('Current time at the point of import'),
+    'callback' => 'feeds_article_get_current_time',
+  );
+
 }
 
 
@@ -579,29 +593,19 @@ function feeds_article_get_feeds_source(FeedsSource $source,
 }
 
 
-/**
- * Example callback specified in hook_feeds_parser_sources_alter().
- *
- * To be invoked on mapping time.
- *
- * @param $source
- *   The FeedsSource object being imported.
- * @param $result
- *   The FeedsParserResult object being mapped from.
- * @param $key
- *   The key specified in the $sources array in
- *   hook_feeds_parser_sources_alter().
- *
- * @return
- *   The value to be extracted from the source.
- *
- * @see hook_feeds_parser_sources_alter()
- * @see locale_feeds_get_source()
- */
+/**/
 function feeds_article_get_feeds_source_link(FeedsSource $source,
   FeedsParserResult $result, $key) {
 
   return $result->link;
+
+}
+
+
+function feeds_article_get_current_time(FeedsSource $source,
+  FeedsParserResult $result, $key) {
+
+  return time();
 
 }
 

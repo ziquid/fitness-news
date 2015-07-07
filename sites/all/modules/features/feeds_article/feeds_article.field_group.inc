@@ -96,6 +96,7 @@ function feeds_article_field_group_info() {
       9 => 'field_imported_user_id',
       10 => 'field_imported_source',
       11 => 'field_imported_source_link',
+      12 => 'field_imported_date',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
