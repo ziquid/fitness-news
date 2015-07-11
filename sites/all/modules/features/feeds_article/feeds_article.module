@@ -97,7 +97,7 @@ function feeds_article_score($node) {
       'shine' => 2,
       'skin' => 2,
       'wash' => 3,
-      'zits' => >3,
+      'zits' => 3,
 
       'a-hole' => -100,
       'badass' => -100,
