@@ -103,8 +103,8 @@ function feeds_article_score($node) {
       'badass' => -100,
       'damn' => -100,
       'f---' => -100,
-      'f*ck' => -100,
-      'sh*t' => -100,
+      'f\*ck' => -100,
+      'sh\*t' => -100,
       'wtf' => -100,
 
     ),
