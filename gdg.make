@@ -56,7 +56,7 @@ projects[exif_custom][subdir] = "contrib"
 projects[exif_custom][version] = "1.14"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.5"
+projects[features][version] = "2.6"
 
 projects[feeds][subdir] = "contrib"
 projects[feeds][version] = "2.0-alpha9"
@@ -114,7 +114,7 @@ projects[menu_trail_by_path][subdir] = "contrib"
 projects[menu_trail_by_path][version] = "2.0"
 
 projects[metatag][subdir] = "contrib"
-projects[metatag][version] = "1.5"
+projects[metatag][version] = "1.6"
 
 projects[nice_menus][subdir] = "contrib"
 projects[nice_menus][version] = "2.5"
@@ -132,7 +132,7 @@ projects[publication_date][subdir] = "contrib"
 projects[publication_date][version] = "2.2"
 
 projects[redirect][subdir] = "contrib"
-projects[redirect][version] = "1.0-rc1"
+projects[redirect][version] = "1.0-rc3"
 
 projects[stage_file_proxy][subdir] = "contrib"
 projects[stage_file_proxy][version] = "1.7"
