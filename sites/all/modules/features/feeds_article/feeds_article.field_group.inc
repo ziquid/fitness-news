@@ -122,7 +122,7 @@ function feeds_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Text',
-    'weight' => '1',
+    'weight' => '2',
     'children' => array(
       0 => 'body',
       1 => 'field_deck',

@@ -305,13 +305,9 @@ function feeds_article_field_default_field_instances() {
       ),
       'front_page' => array(
         'label' => 'hidden',
-        'module' => 'image',
-        'settings' => array(
-          'image_link' => 'content',
-          'image_style' => '600x600',
-        ),
-        'type' => 'image',
-        'weight' => 0,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -326,7 +322,7 @@ function feeds_article_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 23,
+      'default_image' => 0,
       'file_directory' => 'images',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -526,7 +522,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -920,7 +916,7 @@ function feeds_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 0,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',

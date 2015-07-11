@@ -98,6 +98,16 @@ function basic_config_filter_default_formats() {
     ),
   );
 
+  // Exported format: Display Suite code.
+  $formats['ds_code'] = array(
+    'format' => 'ds_code',
+    'name' => 'Display Suite code',
+    'cache' => 1,
+    'status' => 1,
+    'weight' => 12,
+    'filters' => array(),
+  );
+
   // Exported format: Full HTML.
   $formats['full_html'] = array(
     'format' => 'full_html',

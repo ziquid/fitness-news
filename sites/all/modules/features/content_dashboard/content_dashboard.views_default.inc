@@ -37,6 +37,7 @@ function content_dashboard_views_default_views() {
     'field_highest_relevance' => 'field_highest_relevance',
     'field_section' => 'field_section',
     'field_imported_source_link' => 'field_imported_source_link',
+    'field_image' => 'field_image',
   );
   $handler->display->display_options['style_options']['default'] = 'field_score';
   $handler->display->display_options['style_options']['info'] = array(
@@ -69,6 +70,13 @@ function content_dashboard_views_default_views() {
       'empty_column' => 0,
     ),
     'field_imported_source_link' => array(
+      'sortable' => 1,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_image' => array(
       'sortable' => 1,
       'default_sort_order' => 'asc',
       'align' => '',
@@ -149,6 +157,11 @@ function content_dashboard_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = 'Edit';
   /* Field: Content: Score */
   $handler->display->display_options['fields']['field_score']['id'] = 'field_score';
   $handler->display->display_options['fields']['field_score']['table'] = 'field_data_field_score';
@@ -180,6 +193,21 @@ function content_dashboard_views_default_views() {
   $handler->display->display_options['fields']['field_imported_source_link']['type'] = 'link_title_plain';
   $handler->display->display_options['fields']['field_imported_source_link']['settings'] = array(
     'strip_www' => 1,
+  );
+  /* Field: Has Image? */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['ui_name'] = 'Has Image?';
+  $handler->display->display_options['fields']['field_image']['label'] = 'Has Image?';
+  $handler->display->display_options['fields']['field_image']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['text'] = 'YES';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['empty'] = '<span class="error">NO</span>';
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['type'] = 'file_download_link';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'text' => '[file:name]',
   );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;

@@ -37,6 +37,11 @@ function feeds_article_ds_field_settings_info() {
   $ds_fieldsetting->bundle = 'article';
   $ds_fieldsetting->view_mode = 'front_page';
   $ds_fieldsetting->settings = array(
+    'image_or_section_image' => array(
+      'weight' => '0',
+      'label' => 'hidden',
+      'format' => 'default',
+    ),
     'title' => array(
       'weight' => '3',
       'label' => 'hidden',
@@ -131,7 +136,7 @@ function feeds_article_ds_layout_settings_info() {
   $ds_layout->settings = array(
     'regions' => array(
       'ds_content' => array(
-        0 => 'field_image',
+        0 => 'image_or_section_image',
         1 => 'group_text_front_page_text',
         2 => 'field_section',
         3 => 'title',
@@ -140,7 +145,7 @@ function feeds_article_ds_layout_settings_info() {
       ),
     ),
     'fields' => array(
-      'field_image' => 'ds_content',
+      'image_or_section_image' => 'ds_content',
       'group_text_front_page_text' => 'ds_content',
       'field_section' => 'ds_content',
       'title' => 'ds_content',

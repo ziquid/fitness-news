@@ -19,12 +19,40 @@ function fitness_preprocess_html(&$variables) {
   if (arg(0) == 'node') {
 
     $node = node_load(arg(1));
+    $image_uri = '';
 
     if (isset($node->field_image[LANGUAGE_NONE][0]['uri'])) {
 
       $image_uri = image_style_url('1200px_wide',
         $node->field_image[LANGUAGE_NONE][0]['uri']
       );
+
+    }
+
+    if (empty($image_uri)) { // no image?  choose one from term
+
+      if (isset($node->field_section[LANGUAGE_NONE][0])) { // has a section
+
+        $section = taxonomy_term_load(
+          $node->field_section[LANGUAGE_NONE][0]['tid']
+        );
+
+        if (isset($section->field_images[LANGUAGE_NONE][0]['uri'])) {
+
+          $num_images = count($section->field_images[LANGUAGE_NONE]);
+          $node_hash = intval(substr(md5($node->title), -7), 16);
+          $rand_key = ($node_hash % $num_images);
+          $image_uri = image_style_url('1200px_wide',
+            $section->field_images[LANGUAGE_NONE][$rand_key]['uri']
+          );
+
+        }
+
+      } // has a section
+
+    } // get default image from term
+
+    if (isset($image_uri)) {
 
       drupal_add_css('
         body {
@@ -43,8 +71,8 @@ function fitness_preprocess_html(&$variables) {
 
       $variables['styles'] = drupal_get_css();
 
-    }
+    } // do we have an image?
 
-  }
+  } // is this a node?
 
-}
+} // preprocess_html()

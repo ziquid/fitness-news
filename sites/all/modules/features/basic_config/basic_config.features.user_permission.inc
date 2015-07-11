@@ -557,6 +557,15 @@ function basic_config_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'administer publication date'.
+  $permissions['administer publication date'] = array(
+    'name' => 'administer publication date',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'publication_date',
+  );
+
   // Exported permission: 'administer redirects'.
   $permissions['administer redirects'] = array(
     'name' => 'administer redirects',
@@ -1358,6 +1367,33 @@ function basic_config_user_default_permissions() {
     'module' => 'user',
   );
 
+  // Exported permission: 'set any published on date'.
+  $permissions['set any published on date'] = array(
+    'name' => 'set any published on date',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'publication_date',
+  );
+
+  // Exported permission: 'set article published on date'.
+  $permissions['set article published on date'] = array(
+    'name' => 'set article published on date',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'publication_date',
+  );
+
+  // Exported permission: 'set feed published on date'.
+  $permissions['set feed published on date'] = array(
+    'name' => 'set feed published on date',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'publication_date',
+  );
+
   // Exported permission: 'show format selection for comment'.
   $permissions['show format selection for comment'] = array(
     'name' => 'show format selection for comment',
@@ -1520,6 +1556,15 @@ function basic_config_user_default_permissions() {
       'Developer' => 'Developer',
       'Editor' => 'Editor',
       'Title Administrator' => 'Title Administrator',
+    ),
+    'module' => 'filter',
+  );
+
+  // Exported permission: 'use text format ds_code'.
+  $permissions['use text format ds_code'] = array(
+    'name' => 'use text format ds_code',
+    'roles' => array(
+      'Administrator' => 'Administrator',
     ),
     'module' => 'filter',
   );
