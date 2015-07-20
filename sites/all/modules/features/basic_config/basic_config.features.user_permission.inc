@@ -686,6 +686,15 @@ function basic_config_user_default_permissions() {
     'module' => 'views',
   );
 
+  // Exported permission: 'administer xmlsitemap'.
+  $permissions['administer xmlsitemap'] = array(
+    'name' => 'administer xmlsitemap',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'xmlsitemap',
+  );
+
   // Exported permission: 'block IP addresses'.
   $permissions['block IP addresses'] = array(
     'name' => 'block IP addresses',

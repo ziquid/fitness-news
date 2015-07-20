@@ -63,6 +63,7 @@ $conf['master_modules'] = array(
     'typogrify',
     'update',
     'video_embed_field',
+    'xmlsitemap',
 
 // GDG modules
     'basic_config',

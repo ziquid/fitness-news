@@ -164,6 +164,9 @@ projects[views][version] = "3.11"
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.2"
 
+projects[xmlsitemap][subdir] = "contrib"
+projects[xmlsitemap][version] = "2.2"
+
 ; Themes
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.

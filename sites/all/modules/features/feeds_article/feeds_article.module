@@ -100,10 +100,12 @@ function feeds_article_score($node) {
       'zits' => 3,
 
       'a-hole' => -100,
+      'b\*tch' => -100,
       'badass' => -100,
       'damn' => -100,
       'f---' => -100,
       'f\*ck' => -100,
+      'motherf\*\*cker' => -100,
       'sh\*t' => -100,
       'wtf' => -100,
 
@@ -140,10 +142,12 @@ function feeds_article_score($node) {
       'weight' => 3,
 
       'a-hole' => -100,
+      'b\*tch' => -100,
       'badass' => -100,
       'damn' => -100,
       'f---' => -100,
       'f\*ck' => -100,
+      'motherf\*\*cker' => -100,
       'sh\*t' => -100,
       'wtf' => -100,
 
@@ -204,10 +208,12 @@ function feeds_article_score($node) {
       'zumba' => 3,
 
       'a-hole' => -100,
+      'b\*tch' => -100,
       'badass' => -100,
       'damn' => -100,
       'f---' => -100,
       'f\*ck' => -100,
+      'motherf\*\*cker' => -100,
       'sh\*t' => -100,
       'wtf' => -100,
 
@@ -259,10 +265,12 @@ function feeds_article_score($node) {
       'virginity' => 3,
 
       'a-hole' => -100,
+      'b\*tch' => -100,
       'badass' => -100,
       'damn' => -100,
       'f---' => -100,
       'f\*ck' => -100,
+      'motherf\*\*cker' => -100,
       'sh\*t' => -100,
       'wtf' => -100,
 
