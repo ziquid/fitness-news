@@ -471,7 +471,7 @@ function feeds_article_score($node) {
 
 // publish or promote?
 
-  $node->status = ($score > variable_get('score_to_publish', 1)) ? 1 : 0;
+  $node->status = 1; // always publish ($score > variable_get('score_to_publish', 1)) ? 1 : 0;
   $node->promote = ($score > variable_get('score_to_promote', 2)) ? 1 : 0;
 
 //     dpm($node, $node->title);
