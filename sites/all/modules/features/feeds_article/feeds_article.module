@@ -14,6 +14,11 @@ function feeds_article_menu() {
     'access arguments' => array('administer nodes'),
   );
 
+  $items['admin/rescore/all'] = array(
+    'page callback' => 'feeds_article_rescore_all_wrapper',
+    'access arguments' => array('administer nodes'),
+  );
+
   return $items;
 
 }
@@ -361,7 +366,7 @@ function feeds_article_score($node) {
 
 // save highest relevance
 
-  $relevance = 0;
+  $relevance = -9999;
   $relevance_section = '';
 
   foreach ($scores as $section => $score) {
@@ -486,40 +491,59 @@ function feeds_article_cron() {
 }
 
 
-function feeds_article_rescore() {
+function feeds_article_rescore($all = FALSE) {
 
-  $articles1 = $articles2 = array();
-  $query = new EntityFieldQuery();
+  if ($all) { // rescore all nodes
 
-  $query->entityCondition('entity_type', 'node')
-    ->entityCondition('bundle', 'article')
-    ->fieldCondition('field_imported_date', 'value', time() - 345600, '>')
-//    ->addTag('imported_in_last_four_days')
-    ->addMetaData('account', user_load(1)); // Run the query as user 1.
+    $query = new EntityFieldQuery();
 
-  $result = $query->execute();
+    $query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'article')
+      ->addMetaData('account', user_load(1)); // Run the query as user 1.
 
-  if (isset($result['node'])) {
-    $nids = array_keys($result['node']);
-    $articles1 = entity_load('node', $nids);
+    $result = $query->execute();
+
+    if (isset($result['node'])) {
+      $nids = array_keys($result['node']);
+      $articles = entity_load('node', $nids);
+    }
+
+  } else { // only rescore recent or positive
+
+    $articles1 = $articles2 = array();
+    $query = new EntityFieldQuery();
+
+    $query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'article')
+      ->fieldCondition('field_imported_date', 'value', time() - 345600, '>')
+  //    ->addTag('imported_in_last_four_days')
+      ->addMetaData('account', user_load(1)); // Run the query as user 1.
+
+    $result = $query->execute();
+
+    if (isset($result['node'])) {
+      $nids = array_keys($result['node']);
+      $articles1 = entity_load('node', $nids);
+    }
+
+    $query = new EntityFieldQuery();
+
+    $query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'article')
+      ->fieldCondition('field_score', 'value', 0, '>')
+      ->addMetaData('account', user_load(1)); // Run the query as user 1.
+
+    $result = $query->execute();
+
+    if (isset($result['node'])) {
+      $nids = array_keys($result['node']);
+      $articles2 = entity_load('node', $nids);
+    }
+
+    $articles = (array) $articles1 + (array) $articles2;
+  // @FIXME: write a proper query with an OR condition
+
   }
-
-  $query = new EntityFieldQuery();
-
-  $query->entityCondition('entity_type', 'node')
-    ->entityCondition('bundle', 'article')
-    ->fieldCondition('field_score', 'value', 0, '>')
-    ->addMetaData('account', user_load(1)); // Run the query as user 1.
-
-  $result = $query->execute();
-
-  if (isset($result['node'])) {
-    $nids = array_keys($result['node']);
-    $articles2 = entity_load('node', $nids);
-  }
-
-  $articles = (array) $articles1 + (array) $articles2;
-// @FIXME: write a proper query with an OR condition
 
   if (count($articles) > 0) {
 
@@ -558,6 +582,15 @@ function feeds_article_rescore_wrapper() {
   feeds_article_rescore();
   drupal_set_message('Article rescore completed.');
   return 'Article rescore completed.';
+
+}
+
+
+function feeds_article_rescore_all_wrapper() {
+
+  feeds_article_rescore(TRUE);
+  drupal_set_message('ALL Article rescore completed.');
+  return 'ALL Article rescore completed.';
 
 }
 
