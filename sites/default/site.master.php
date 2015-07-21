@@ -64,6 +64,8 @@ $conf['master_modules'] = array(
     'update',
     'video_embed_field',
     'xmlsitemap',
+    'xmlsitemap_engines',
+    'xmlsitemap_menu',
     'xmlsitemap_node',
 
 // GDG modules
