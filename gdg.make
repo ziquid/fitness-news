@@ -59,7 +59,7 @@ projects[features][subdir] = "contrib"
 projects[features][version] = "2.6"
 
 projects[feeds][subdir] = "contrib"
-projects[feeds][version] = "2.0-alpha9"
+projects[feeds][version] = "2.0-beta1"
 projects[feeds][patch][] = "./patches/feeds_see_simplepie_1.3.1.patch"
 
 projects[feeds_tamper][subdir] = "contrib"
@@ -69,7 +69,7 @@ projects[field_group][subdir] = "contrib"
 projects[field_group][version] = "1.4"
 
 projects[file_entity][subdir] = "contrib"
-projects[file_entity][version] = "2.0-beta1"
+projects[file_entity][version] = "2.0-beta2"
 
 projects[fontyourface][subdir] = "contrib"
 projects[fontyourface][version] = "2.8"
