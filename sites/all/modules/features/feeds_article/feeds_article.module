@@ -92,7 +92,7 @@ function feeds_article_score($node) {
   );
 
 
-  $weightings['Cardio'] => array(
+  $weightings['Cardio'] = array(
     '5k' => 3,
     'bike' => 3,
     'biking' => 3,
@@ -127,7 +127,7 @@ function feeds_article_score($node) {
   ) + $weightings['base'];
 
 
-  $weightings['Strength'] => array(
+  $weightings['Strength'] = array(
     'barbell' => 3,
     'barbells' => 3,
     'dumbbell' => 3,
@@ -149,7 +149,7 @@ function feeds_article_score($node) {
   ) + $weightings['base'];
 
 
-  $weightings['Diet'] => array(
+  $weightings['Diet'] = array(
     'clean' => 3,
     'cooking' => 3,
     'cough' => 3,
@@ -180,12 +180,12 @@ function feeds_article_score($node) {
   ) + $weightings['base'];
 
 
-  $weightings['Gear'] => array(
+  $weightings['Gear'] = array(
     'watch' => 3,
   ) + $weightings['base'];
 
 
-  $weightings['More'] => array(
+  $weightings['More'] = array(
     'inspiration' => 3,
     'inspire' => 3,
     'inspired' => 3,
