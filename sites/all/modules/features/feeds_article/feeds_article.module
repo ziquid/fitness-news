@@ -119,7 +119,7 @@ function feeds_article_score($node) {
     'tennis' => 3,
     'treadmill' => 3,
     'walk' => 3,
-    'walking' =>. 3,
+    'walking' => 3,
     'walks' => 3,
     'workout' => 3,
     'workouts' => 3,
