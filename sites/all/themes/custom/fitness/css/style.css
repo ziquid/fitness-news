@@ -246,7 +246,7 @@ ul.nice-menu-main-menu {
 ul.nice-menu-main-menu li {
   width: 20%;
   border: none;
-  background-color: initial;
+  background-color: blue;
   text-transform: uppercase;
   text-align: center;
   padding: 3px 0 4px;
@@ -257,23 +257,23 @@ ul.nice-menu-main-menu li.active-trail {
   border-bottom: 2px solid #2b3;
 }
 
-ul.nice-menu-main-menu li.menu-path-taxonomy-term-1 {
+ul.nice-menu-main-menu li.menu-path-taxonomy-term-6 {
   background-color: #1d3;
 }
 
-ul.nice-menu-main-menu li.menu-path-taxonomy-term-2 {
+ul.nice-menu-main-menu li.menu-path-taxonomy-term-7 {
   background-color: #1dd;
 }
 
-ul.nice-menu-main-menu li.menu-path-taxonomy-term-3 {
+ul.nice-menu-main-menu li.menu-path-taxonomy-term-8 {
   background-color: #31d;
 }
 
-ul.nice-menu-main-menu li.menu-path-taxonomy-term-4 {
+ul.nice-menu-main-menu li.menu-path-taxonomy-term-9 {
   background-color: #d13;
 }
 
-ul.nice-menu-main-menu li.menu-path-taxonomy-term-5 {
+ul.nice-menu-main-menu li.menu-path-taxonomy-term-10 {
   background-color: #d39;
 }
 
