@@ -283,7 +283,7 @@ function feeds_article_score($node) {
 // save highest relevance
 
   $relevance = -9999;
-  $relevance_section = '';
+  $relevance_section = 'More';
 
   foreach ($scores as $section => $score) {
 
