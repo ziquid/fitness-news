@@ -153,6 +153,7 @@ function feeds_article_score($node) {
 
 
   $weightings['Diet'] = array(
+    'calories' => 3,
     'clean' => 3,
     'cooking' => 3,
     'cough' => 3,
@@ -388,8 +389,8 @@ function feeds_article_score($node) {
 
 // publish or promote?
 
-  $node->status = 1; // always publish ($score > variable_get('score_to_publish', 1)) ? 1 : 0;
-  $node->promote = ($score > variable_get('score_to_promote', 2)) ? 1 : 0;
+  if ($score > variable_get('score_to_publish', 10)) $node->status = 1;
+  $node->promote = ($score > variable_get('score_to_promote', 10)) ? 1 : 0;
 
 //     dpm($node, $node->title);
 
