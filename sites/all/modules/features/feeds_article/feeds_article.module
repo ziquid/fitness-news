@@ -96,6 +96,8 @@ function feeds_article_score($node) {
     '5k' => 3,
     'bike' => 3,
     'biking' => 3,
+    'cycling' => 3,
+    'cyclist' => 3,
     'jog' => 3,
     'jogging' => 3,
     'jogs' => 3,
@@ -105,8 +107,9 @@ function feeds_article_score($node) {
     'kickboxing' => 3,
     'metabolism' => 3,
     'pace' => 3,
-    'race' => 2,
-    'run' => 2,
+    'race' => 3,
+    'racing' => 3,
+    'run' => 3,
     'runner' => 3,
     'running' => 3,
     'runs' => 2,
@@ -139,6 +142,7 @@ function feeds_article_score($node) {
     'pace' => 3,
     'plank' => 3,
     'sport' => 3,
+    'strength' => 3,
     'strengthening' => 3,
     'stretch' => 3,
     'stretching' => 3,
@@ -153,6 +157,8 @@ function feeds_article_score($node) {
 
 
   $weightings['Diet'] = array(
+    'berries' => 3,
+    'berry' => 3,
     'calories' => 3,
     'clean' => 3,
     'cooking' => 3,
@@ -162,18 +168,24 @@ function feeds_article_score($node) {
     'disease' => 3,
     'doctor' => 2,
     'doctors' => 2,
+    'drink' => 3,
+    'drinks' => 3,
     'energy' => 3,
     'food' => 3,
+    'fruit' => 3,
     'garden' => 3,
+    'gluten' => 3,
     'health' => 3,
     'healthiest' => 3,
     'healthy' => 3,
     'hospital' => 3,
     'hospitals' => 3,
+    'ingredients' => 3,
     'mealtime' => 3,
     'metabolism' => 3,
     'nutrients' => 3,
     'nutrition' => 3,
+    'oatmeal' => 3,
     'oxygen' => 2,
     'pregnant' => 3,
     'pregnancy' => 3,
@@ -183,6 +195,10 @@ function feeds_article_score($node) {
     'sick' => 3,
     'sickness' => 3,
     'smoking' => 3,
+    'snack' => 3,
+    'sugar' => 3,
+    'sugary' => 3,
+    'water' => 3,
     'weight' => 3,
   ) + $weightings['base'];
 
@@ -193,9 +209,15 @@ function feeds_article_score($node) {
 
 
   $weightings['More'] = array(
+    'behind-the-scenes' => 3,
+    'celebrate' => 3,
+    'educate' => 3,
     'inspiration' => 3,
     'inspire' => 3,
     'inspired' => 3,
+    'sleep' => 3,
+    'snore' => 3,
+    'snoring' => 3,
   ) + $weightings['base'];
 
 
@@ -393,7 +415,7 @@ function feeds_article_score($node) {
 
 // publish or promote?
 
-  if ($score > variable_get('score_to_publish', 10)) $node->status = 1;
+  if ($relevance > variable_get('score_to_publish', 10)) $node->status = 1;
   $node->promote = ($score > variable_get('score_to_promote', 10)) ? 1 : 0;
 
 //     dpm($node, $node->title);
