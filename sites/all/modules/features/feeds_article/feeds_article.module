@@ -163,6 +163,7 @@ function feeds_article_score($node) {
     'doctor' => 2,
     'doctors' => 2,
     'energy' => 3,
+    'food' => 3,
     'garden' => 3,
     'health' => 3,
     'healthiest' => 3,
@@ -176,6 +177,8 @@ function feeds_article_score($node) {
     'oxygen' => 2,
     'pregnant' => 3,
     'pregnancy' => 3,
+    'recipe' => 3,
+    'recipes' => 3,
     'skin' => 2,
     'sick' => 3,
     'sickness' => 3,
@@ -315,7 +318,8 @@ function feeds_article_score($node) {
     ),
   );
 
-  if (empty($node->field_imported_date))
+  if ((empty($node->field_imported_date)) ||
+    (empty($node->field_imported_date[LANGUAGE_NONE])))
     $node->field_imported_date = array(
       LANGUAGE_NONE => array(
         0 => array(
@@ -324,8 +328,8 @@ function feeds_article_score($node) {
       )
     );
 
-  $relevance_decay = (int) ((time() - $node->field_imported_date
-    [LANGUAGE_NONE][0]['value']) / 3600);
+  $relevance_decay = (int) ((time() -
+    $node->field_imported_date[LANGUAGE_NONE][0]['value']) / 3600);
 
 //   $relevance_decay = (int) ((time() - $node->published_at) / 3600);
 
