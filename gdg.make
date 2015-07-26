@@ -44,7 +44,7 @@ projects[draggableviews][subdir] = "contrib"
 projects[draggableviews][version] = "2.1"
 
 projects[ds][subdir] = "contrib"
-projects[ds][version] = "2.10"
+projects[ds][version] = "2.11"
 
 projects[entity][subdir] = "contrib"
 projects[entity][version] = "1.6"
@@ -108,13 +108,13 @@ projects[master][subdir] = "contrib"
 projects[master][version] = "2.0-beta4"
 
 projects[media][subdir] = "contrib"
-projects[media][version] = "2.x-dev"
+projects[media][version] = "2.0-beta1"
 
 projects[menu_trail_by_path][subdir] = "contrib"
 projects[menu_trail_by_path][version] = "2.0"
 
 projects[metatag][subdir] = "contrib"
-projects[metatag][version] = "1.6"
+projects[metatag][version] = "1.7"
 
 projects[nice_menus][subdir] = "contrib"
 projects[nice_menus][version] = "2.5"
