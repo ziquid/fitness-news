@@ -250,6 +250,13 @@ function feeds_article_score($node) {
 
 
   $weightings['Gear'] = array(
+    'bras' => 3,
+    'clothes' => 3,
+    'fitbit' => 3,
+    'gear' => 3,
+    'products' => 3,
+    'shoes' => 3,
+    'sneakers' => 3,
     'watch' => 3,
   ) + $weightings['base'];
 
