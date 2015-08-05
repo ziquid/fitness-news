@@ -135,6 +135,13 @@ function feeds_article_score($node) {
   ) + $weightings['cardio-base'];
 
   $weightings['Walking'] = array(
+    'hike' => 3,
+    'hiking' => 3,
+    'hikes' => 3,
+    'stroll' => 3,
+    'strolling' => 3,
+    'strolls' => 3,
+    'treadmill' => 3,
     'walk' => 3,
     'walking' => 3,
     'walks' => 3,
