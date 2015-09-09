@@ -143,6 +143,14 @@ projects[strongarm][version] = "2.0"
 projects[subpathauto][subdir] = "contrib"
 projects[subpathauto][version] = "1.3"
 
+; Swiftype integration module
+projects[swiftype_integration][subdir] = "contrib"
+projects[swiftype_integration][type] = module
+projects[swiftype_integration][download][type] = git
+projects[swiftype_integration][download][branch] = "7.x-1.x"
+projects[swiftype_integration][download][url] = http://git.drupal.org/sandbox/dmitry-evdokimov/2539904.git
+projects[swiftype_integration][download][revision] = 39833bbca9474638a2c7072c8675776b47efc2af
+
 projects[taxonomy_menu][subdir] = "contrib"
 projects[taxonomy_menu][version] = "1.5"
 
