@@ -116,6 +116,9 @@ projects[menu_trail_by_path][version] = "2.0"
 projects[metatag][subdir] = "contrib"
 projects[metatag][version] = "1.7"
 
+projects[multiform][subdir] = "contrib"
+projects[multiform][version] = "1.1"
+
 projects[nice_menus][subdir] = "contrib"
 projects[nice_menus][version] = "2.5"
 
@@ -127,6 +130,9 @@ projects[oauth][version] = "3.2"
 
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "1.2"
+
+projects[plupload][subdir] = "contrib"
+projects[plupload][version] = "1.7"
 
 projects[publication_date][subdir] = "contrib"
 projects[publication_date][version] = "2.2"
