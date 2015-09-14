@@ -29,7 +29,7 @@ $conf['master_modules'] = array(
     'fontyourface_wysiwyg',
     'geshifield',
     'globalredirect',
-    'google_analytics',
+    'googleanalytics',
     'imagecache_token',
     'jcarousel',
     'job_scheduler',
