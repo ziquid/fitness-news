@@ -77,6 +77,9 @@ projects[fontyourface][version] = "2.8"
 projects[geshifilter][subdir] = "contrib"
 projects[geshifilter][version] = "1.2"
 
+projects[google_analytics][subdir] = "contrib"
+projects[google_analytics][version] = "2.1"
+
 projects[globalredirect][subdir] = "contrib"
 projects[globalredirect][version] = "1.5"
 
