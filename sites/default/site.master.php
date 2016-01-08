@@ -58,7 +58,7 @@ $conf['master_modules'] = array(
     'statistics',
     'strongarm',
     'subpathauto',
-    'swiftype_integration',
+    'swiftype',
     'taxonomy',
     'taxonomy_menu',
     'tracker',

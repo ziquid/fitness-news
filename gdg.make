@@ -3,7 +3,7 @@ core = 7.x
 api = 2
 
 ; Core
-projects[drupal][version] = "7.39"
+projects[drupal][version] = "7.41"
 projects[drupal][type] = "core"
 
 ; Modules
@@ -11,7 +11,7 @@ projects[admin_menu][subdir] = "contrib"
 projects[admin_menu][version] = "3.0-rc5"
 
 projects[adminrole][subdir] = "contrib"
-projects[adminrole][version] = "1.0"
+projects[adminrole][version] = "1.1"
 
 projects[auto_nodetitle][subdir] = "contrib"
 projects[auto_nodetitle][version] = "1.0"
@@ -23,7 +23,7 @@ projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.0-beta1"
 
 projects[block_class][subdir] = "contrib"
-projects[block_class][version] = "2.1"
+projects[block_class][version] = "2.3"
 
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.9"
@@ -32,7 +32,7 @@ projects[codefilter][subdir] = "contrib"
 projects[codefilter][version] = "1.1"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.8"
+projects[date][version] = "2.9"
 
 projects[devel][subdir] = "contrib"
 projects[devel][version] = "1.5"
@@ -56,7 +56,7 @@ projects[exif_custom][subdir] = "contrib"
 projects[exif_custom][version] = "1.14"
 
 projects[features][subdir] = "contrib"
-projects[features][version] = "2.6"
+projects[features][version] = "2.7"
 
 projects[feeds][subdir] = "contrib"
 projects[feeds][version] = "2.0-beta1"
@@ -66,7 +66,7 @@ projects[feeds_tamper][subdir] = "contrib"
 projects[feeds_tamper][version] = "1.1"
 
 projects[field_group][subdir] = "contrib"
-projects[field_group][version] = "1.4"
+projects[field_group][version] = "1.5"
 
 projects[file_entity][subdir] = "contrib"
 projects[file_entity][version] = "2.0-beta2"
@@ -132,7 +132,7 @@ projects[oauth][subdir] = "contrib"
 projects[oauth][version] = "3.2"
 
 projects[pathauto][subdir] = "contrib"
-projects[pathauto][version] = "1.2"
+projects[pathauto][version] = "1.3"
 
 projects[plupload][subdir] = "contrib"
 projects[plupload][version] = "1.7"
@@ -152,13 +152,8 @@ projects[strongarm][version] = "2.0"
 projects[subpathauto][subdir] = "contrib"
 projects[subpathauto][version] = "1.3"
 
-; Swiftype integration module
-projects[swiftype_integration][subdir] = "contrib"
-projects[swiftype_integration][type] = module
-projects[swiftype_integration][download][type] = git
-projects[swiftype_integration][download][branch] = "7.x-1.x"
-projects[swiftype_integration][download][url] = http://git.drupal.org/sandbox/dmitry-evdokimov/2539904.git
-projects[swiftype_integration][download][revision] = 39833bbca9474638a2c7072c8675776b47efc2af
+projects[swiftype][subdir] = "contrib"
+projects[swiftype][version] = "1.0"
 
 projects[taxonomy_menu][subdir] = "contrib"
 projects[taxonomy_menu][version] = "1.5"
@@ -167,16 +162,16 @@ projects[token][subdir] = "contrib"
 projects[token][version] = "1.6"
 
 projects[twitter][subdir] = "contrib"
-projects[twitter][version] = "5.8"
+projects[twitter][version] = "6.2"
 
 projects[typogrify][subdir] = "contrib"
 projects[typogrify][version] = "1.0-rc10"
 
 projects[video_embed_field][subdir] = "contrib"
-projects[video_embed_field][version] = "2.0-beta10"
+projects[video_embed_field][version] = "2.0-beta11"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "3.11"
+projects[views][version] = "3.13"
 
 projects[wysiwyg][subdir] = "contrib"
 projects[wysiwyg][version] = "2.2"
