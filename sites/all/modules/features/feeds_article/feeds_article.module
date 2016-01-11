@@ -100,8 +100,6 @@ function feeds_article_score($node) {
     'racing' => 3,
     'sex' => 2,
     'sport' => 3,
-    'stretch' => 3,
-    'stretching' => 3,
     'workout' => 3,
     'workouts' => 3,
     'work out' => 3,
@@ -109,11 +107,16 @@ function feeds_article_score($node) {
   ) + $weightings['base'];
 
   $weightings['Cardio'] = array(
+    'badminton' => 3,
     'boxing' => 3,
     'jump rope' => 3,
     'kickbox' => 3,
     'kickboxer' => 3,
     'kickboxing' => 3,
+    'martial arts' => 3,
+    'pose' => 2,
+    'poses' => 2,
+    'squash' => 3,
     'stretch' => 2,
     'stretching' => 2,
     'swim' => 3,
@@ -121,6 +124,7 @@ function feeds_article_score($node) {
     'tennis' => 3,
     'treadmill' => 3,
     'yoga' => 3,
+    'yogi' => 3,
     'zumba' => 3,
   ) + $weightings['cardio-base'];
 
