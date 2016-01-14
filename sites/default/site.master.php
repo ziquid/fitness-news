@@ -6,6 +6,8 @@ $conf['master_modules'] = array(
   'base' => array(
     'admin_menu_toolbar',
     'adminrole',
+    'adsense',
+    'adsense_managed',
     'auto_nodetitle',
     'backup_migrate',
     'better_formats',
