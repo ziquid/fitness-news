@@ -414,5 +414,7 @@ body.page-node.node-type-article #main div.field-name-field-imported-source-link
 
 div.ad h2 {
   text-align: center;
-  font-size: 0.4em;
+  font-size: 0.75em;
+  margin: 0.2em;
+  text-transform: uppercase;
 }
