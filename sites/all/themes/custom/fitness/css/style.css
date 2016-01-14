@@ -408,3 +408,11 @@ body.page-node.node-type-article #main div.field-name-field-imported-source-link
 .media-item .label-wrapper label {
   line-height: 12px;
 }
+
+
+/* Advertisements */
+
+div.ad h2 {
+  text-align: center;
+  font-size: 0.4em;
+}
