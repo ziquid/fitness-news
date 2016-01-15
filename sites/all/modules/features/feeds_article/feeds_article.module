@@ -40,7 +40,7 @@ function feeds_article_score($node) {
   if (!isset($node->field_imported_description[LANGUAGE_NONE][0]['value']) &&
     (trim($node->body[LANGUAGE_NONE][0]['value']) != '')) {
 
-    $relevance_decay = (int) ((time() - $node->created) / 3600);
+    $relevance_decay = (int) ((time() - $node->created) / 1800);
     $score = 100 - $relevance_decay;
 
     $node->field_score = array(
