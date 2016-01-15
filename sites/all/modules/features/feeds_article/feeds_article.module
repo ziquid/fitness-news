@@ -430,7 +430,7 @@ function feeds_article_score($node) {
     );
 
   $relevance_decay = (int) ((time() -
-    $node->field_imported_date[LANGUAGE_NONE][0]['value']) / 3600);
+    $node->field_imported_date[LANGUAGE_NONE][0]['value']) / 1800);
 
 //   $relevance_decay = (int) ((time() - $node->published_at) / 3600);
 
