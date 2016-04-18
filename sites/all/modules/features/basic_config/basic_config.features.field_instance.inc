@@ -10,7 +10,7 @@
 function basic_config_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'file-image-field_file_image_alt_text'
+  // Exported field_instance: 'file-image-field_file_image_alt_text'.
   $field_instances['file-image-field_file_image_alt_text'] = array(
     'bundle' => 'image',
     'default_value' => NULL,
@@ -67,7 +67,7 @@ function basic_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'file-image-field_file_image_caption_text'
+  // Exported field_instance: 'file-image-field_file_image_caption_text'.
   $field_instances['file-image-field_file_image_caption_text'] = array(
     'bundle' => 'image',
     'default_value' => NULL,
@@ -150,7 +150,7 @@ function basic_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'file-image-field_file_image_credit_text'
+  // Exported field_instance: 'file-image-field_file_image_credit_text'.
   $field_instances['file-image-field_file_image_credit_text'] = array(
     'bundle' => 'image',
     'default_value' => NULL,
@@ -233,7 +233,7 @@ function basic_config_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'file-image-field_file_image_title_text'
+  // Exported field_instance: 'file-image-field_file_image_title_text'.
   $field_instances['file-image-field_file_image_title_text'] = array(
     'bundle' => 'image',
     'default_value' => NULL,

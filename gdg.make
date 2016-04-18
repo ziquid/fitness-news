@@ -3,8 +3,7 @@ core = 7.x
 api = 2
 
 ; Core
-projects[drupal][version] = "7.41"
-projects[drupal][type] = "core"
+projects[drupal][version] = "7.43"
 
 ; Modules
 projects[admin_menu][subdir] = "contrib"
@@ -22,8 +21,16 @@ projects[auto_nodetitle][version] = "1.0"
 projects[backup_migrate][subdir] = "contrib"
 projects[backup_migrate][version] = "3.1"
 
+; Please fill the following out. Type may be one of get, git, bzr or svn,
+; and url is the url of the download.
+projects[basic_config][download][type] = ""
+projects[basic_config][download][url] = ""
+projects[basic_config][type] = "module"
+projects[basic_config][subdir] = "features"
+projects[basic_config][version] = "0.27"
+
 projects[better_formats][subdir] = "contrib"
-projects[better_formats][version] = "1.0-beta1"
+projects[better_formats][version] = "1.0-beta2"
 
 projects[block_class][subdir] = "contrib"
 projects[block_class][version] = "2.3"
@@ -33,6 +40,14 @@ projects[ctools][version] = "1.9"
 
 projects[codefilter][subdir] = "contrib"
 projects[codefilter][version] = "1.1"
+
+; Please fill the following out. Type may be one of get, git, bzr or svn,
+; and url is the url of the download.
+projects[content_dashboard][download][type] = ""
+projects[content_dashboard][download][url] = ""
+projects[content_dashboard][type] = "module"
+projects[content_dashboard][subdir] = "features"
+projects[content_dashboard][version] = "0.04"
 
 projects[date][subdir] = "contrib"
 projects[date][version] = "2.9"
@@ -47,7 +62,7 @@ projects[draggableviews][subdir] = "contrib"
 projects[draggableviews][version] = "2.1"
 
 projects[ds][subdir] = "contrib"
-projects[ds][version] = "2.11"
+projects[ds][version] = "2.13"
 
 projects[entity][subdir] = "contrib"
 projects[entity][version] = "1.6"
@@ -62,8 +77,16 @@ projects[features][subdir] = "contrib"
 projects[features][version] = "2.7"
 
 projects[feeds][subdir] = "contrib"
-projects[feeds][version] = "2.0-beta1"
+projects[feeds][version] = "2.0-beta2"
 projects[feeds][patch][] = "./patches/feeds_see_simplepie_1.3.1.patch"
+
+; Please fill the following out. Type may be one of get, git, bzr or svn,
+; and url is the url of the download.
+projects[feeds_article][download][type] = ""
+projects[feeds_article][download][url] = ""
+projects[feeds_article][type] = "module"
+projects[feeds_article][subdir] = "features"
+projects[feeds_article][version] = "0.27"
 
 projects[feeds_tamper][subdir] = "contrib"
 projects[feeds_tamper][version] = "1.1"
@@ -102,7 +125,7 @@ projects[lightbox2][subdir] = "contrib"
 projects[lightbox2][version] = "1.0-beta1"
 
 projects[link][subdir] = "contrib"
-projects[link][version] = "1.3"
+projects[link][version] = "1.4"
 
 projects[logintoboggan][subdir] = "contrib"
 projects[logintoboggan][version] = "1.5"
@@ -120,7 +143,7 @@ projects[menu_trail_by_path][subdir] = "contrib"
 projects[menu_trail_by_path][version] = "2.0"
 
 projects[metatag][subdir] = "contrib"
-projects[metatag][version] = "1.7"
+projects[metatag][version] = "1.13"
 
 projects[multiform][subdir] = "contrib"
 projects[multiform][version] = "1.1"
@@ -145,6 +168,14 @@ projects[publication_date][version] = "2.2"
 
 projects[redirect][subdir] = "contrib"
 projects[redirect][version] = "1.0-rc3"
+
+; Please fill the following out. Type may be one of get, git, bzr or svn,
+; and url is the url of the download.
+projects[section_taxonomy][download][type] = ""
+projects[section_taxonomy][download][url] = ""
+projects[section_taxonomy][type] = "module"
+projects[section_taxonomy][subdir] = "features"
+projects[section_taxonomy][version] = "0.07"
 
 projects[stage_file_proxy][subdir] = "contrib"
 projects[stage_file_proxy][version] = "1.7"
@@ -185,9 +216,26 @@ projects[xmlsitemap][version] = "2.2"
 ; Themes
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
 ; and url is the url of the download.
+projects[fitness][download][type] = ""
+projects[fitness][download][url] = ""
+projects[fitness][type] = "theme"
+projects[fitness][subdir] = "custom"
+
+; Please fill the following out. Type may be one of get, git, bzr or svn,
+; and url is the url of the download.
+projects[fitness_bootstrap][download][type] = ""
+projects[fitness_bootstrap][download][url] = ""
+projects[fitness_bootstrap][type] = "theme"
+projects[fitness_bootstrap][subdir] = "custom"
+
+; Please fill the following out. Type may be one of get, git, bzr or svn,
+; and url is the url of the download.
 projects[gdg][download][type] = ""
 projects[gdg][download][url] = ""
 projects[gdg][type] = "theme"
+
+projects[bootstrap][subdir] = "contrib"
+projects[bootstrap][version] = "3.4"
 
 ; Libraries
 ; Please fill the following out. Type may be one of get, git, bzr or svn,
@@ -204,6 +252,18 @@ libraries[geshi][download][url] = ""
 libraries[geshi][directory_name] = "geshi"
 libraries[geshi][type] = "library"
 
+; Please fill the following out. Type may be one of get, git, bzr or svn,
+; and url is the url of the download.
+libraries[plupload][download][type] = ""
+libraries[plupload][download][url] = ""
+libraries[plupload][directory_name] = "plupload"
+libraries[plupload][type] = "library"
+
+; Please fill the following out. Type may be one of get, git, bzr or svn,
+; and url is the url of the download.
 libraries[simplepie][download][type] = "get"
 libraries[simplepie][download][url] = "http://simplepie.org/downloads/simplepie_1.3.1.compiled.php"
-libraries[simplepie][destination] = libraries
+libraries[simplepie][directory_name] = "simplepie"
+libraries[simplepie][type] = "library"
+
+

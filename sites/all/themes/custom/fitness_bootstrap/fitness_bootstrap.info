@@ -1,0 +1,36 @@
+name = Fitness Bootstrap Theme
+description = Uses the jsDelivr CDN for all CSS and JavaScript.
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer]         = 'Footer'
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/style.css
+
+fonts[typekit_api][] = "jaf-facitweb#n7"
+fonts[typekit_api][] = "jaf-facitweb#i7"
+fonts[typekit_api][] = "jaf-facitweb#i4"
+fonts[typekit_api][] = "jaf-facitweb#n4"
+fonts[typekit_api][] = "myriad-pro-condensed#n7"
+fonts[typekit_api][] = "myriad-pro-condensed#n4"
+fonts[typekit_api][] = "nimbus-sans-extended#n7"
+fonts[typekit_api][] = "nimbus-sans-extended#n4"

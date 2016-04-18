@@ -10,7 +10,7 @@
 function basic_config_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_file_image_alt_text'
+  // Exported field_base: 'field_file_image_alt_text'.
   $field_bases['field_file_image_alt_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -31,7 +31,7 @@ function basic_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_file_image_caption_text'
+  // Exported field_base: 'field_file_image_caption_text'.
   $field_bases['field_file_image_caption_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -52,7 +52,7 @@ function basic_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_file_image_credit_text'
+  // Exported field_base: 'field_file_image_credit_text'.
   $field_bases['field_file_image_credit_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -73,7 +73,7 @@ function basic_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_file_image_title_text'
+  // Exported field_base: 'field_file_image_title_text'.
   $field_bases['field_file_image_title_text'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -94,7 +94,7 @@ function basic_config_field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_image'
+  // Exported field_base: 'field_image'.
   $field_bases['field_image'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -116,7 +116,7 @@ function basic_config_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_images'
+  // Exported field_base: 'field_images'.
   $field_bases['field_images'] = array(
     'active' => 1,
     'cardinality' => -1,
@@ -138,7 +138,7 @@ function basic_config_field_default_field_bases() {
     'type' => 'image',
   );
 
-  // Exported field_base: 'field_imported_source'
+  // Exported field_base: 'field_imported_source'.
   $field_bases['field_imported_source'] = array(
     'active' => 1,
     'cardinality' => 1,

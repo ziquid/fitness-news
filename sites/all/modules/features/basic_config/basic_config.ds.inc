@@ -27,7 +27,7 @@ function basic_config_ds_custom_fields_info() {
 
     if (isset($entity->field_image[LANGUAGE_NONE][0][\'uri\'])) {
 
-      $image_uri = image_style_url(\'600x600\',
+      $image_uri = image_style_url(\'800x800\',
         $entity->field_image[LANGUAGE_NONE][0][\'uri\']
       );
 
@@ -46,7 +46,7 @@ function basic_config_ds_custom_fields_info() {
           $num_images = count($section->field_images[LANGUAGE_NONE]);
           $node_hash = intval(substr(md5($entity->title), -7), 16);
           $rand_key = ($node_hash % $num_images);
-          $image_uri = image_style_url(\'600x600\',
+          $image_uri = image_style_url(\'800x800\',
             $section->field_images[LANGUAGE_NONE][$rand_key][\'uri\']
           );
 
@@ -57,7 +57,7 @@ function basic_config_ds_custom_fields_info() {
     } // get default image from term
 
   if (isset($image_uri))
-    print l(\'<img src="\' . $image_uri . \'"/>\', \'node/\' . $entity->nid, array(\'html\' => TRUE));
+    print l(\'<img class="img-responsive" src="\' . $image_uri . \'"/>\', \'node/\' . $entity->nid, array(\'html\' => TRUE));
 
 ?>',
       'format' => 'ds_code',
