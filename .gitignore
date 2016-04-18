@@ -27,6 +27,7 @@ UPGRADE.txt
 includes
 misc
 sites/*/modules/contrib
+sites/*/themes/contrib
 profiles
 scripts
 themes/bartik
