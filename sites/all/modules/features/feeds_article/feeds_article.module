@@ -63,7 +63,7 @@ function feeds_article_score($node) {
   $allowed_tags = explode(' ',
     'em strong cite blockquote code ul ol li dl dt dd p br big h2');
 
-  $weightings = feeds_article_get_weightings();
+  $weightings = feeds_articles_get_weightings();
 
   $text_only = strip_tags(
     @$node->field_imported_description[LANGUAGE_NONE][0]['value'], ''
